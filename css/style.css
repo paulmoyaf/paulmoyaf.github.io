@@ -125,24 +125,30 @@ width: 100%;
 }
 
 
-/* **********secciones main******************** */
+/***********secciones main*********************/
 
 .secGuitar{
-    border: 1.5px rgb(0, 0, 0) dashed;
-    display: flex ;
-    flex-wrap: wrap;
+    border: 2.5px rgb(0, 0, 0) dashed;
+    /* display: flex ;
+    flex-wrap: wrap; */
+    display: grid;
+    grid: repeat(3, 200px); 
 }
 
 .productoPrincipal{
-  border: 2px rgb(46, 0, 253) dashed;
-  display: flex;
-	flex-wrap: wrap;
-
+  border: 10px rgb(209, 104, 5) dashed;
+  /* display: flex;
+	flex-wrap: wrap; */
+  /* display: grid;
+  grid-column: 2;
+  grid-template-columns: 60% 35%;
+  gap: 5%; */
+  
 }
 
 .guitarPrincipal{
     border: 5px rgb(255, 0, 0) dashed;
-    width: 60%;
+    /* width: 60%; */
     margin-top: 0px;
     margin-left: 0px;
     display: flex ;
@@ -153,7 +159,7 @@ width: 100%;
 .recomendados{
   border: 5px rgb(0, 139, 253) dashed;
   padding-top: 0%;
-  width: 25%;
+  /* width: 25%; */
   text-align: center;
   background-color: rgb(240, 240, 240);
 }
