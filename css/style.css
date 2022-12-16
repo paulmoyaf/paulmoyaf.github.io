@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+*{margin: auto; padding: auto;}
+
+body{
+    border:1px dotted rgb(7, 7, 7);
+    height: 100%;
+}
+header{
+  /* background-color: rgb(168, 168, 168); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+  /* background-color: rgb(184, 248, 6); */
+  width: 100px;
+}
+
+.carrito{
+  width: 50px;
+}
+
+#precio{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: orange;
+  text-decoration: 4px dashed black;
+  font-size: 200%;
+}
+
+#stock{
+  font-family:monospace;
+  color: rgb(1, 109, 28);
+  text-decoration: 4px dashed black;
+  font-size: 150%;
+}
+
+nav{
+  
+  background-color: rgb(255, 255, 255);
+  border-top: 0.5px rgb(165, 165, 165);
+  border-style:groove;
+  border-left: none;
+  border-right: none;
+  padding: 1%;
+  text-transform: uppercase;
+  text-align: center;
+  /* border-style:hidden; */
+
+}
+nav li {
+    margin-right: 5%;
+    display: inline;
+}
+
+nav a{
+  text-decoration:none;
+  color: rgb(105, 46, 46);
+}
+
+a{
+  text-decoration:none;
+  color: rgb(0, 0, 0);
+}
+
+
+
+main{
+  display: grid;
+  grid-row:auto ;
+}
+main, footer section{
+  /* border: 0.5px rgb(204, 203, 203) dashed; */
+  width: auto;
+}
+
+
+header, nav, main, footer, aside, .picPrincipal, article, main img{
+    /* border: 0.5px rgb(204, 203, 203) dashed;
+    border-radius: 5px; */
+  font-family: "Segoe UI";}
+
+main{
+  border: 0.5px rgb(46, 0, 253) dashed;
+  padding-top: 2%;
+  height: 80%;
+  width: 80%;
+}
+
+sup {
+  font-size: 60%;
+}
+
+/* foto del index */
+
+#picPrincipal{
+  width: 100%;
+  height: 50%;
+  padding: 0%;
+}
+
+
+.instrumentos{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5px;
+  /* background-color: #2196F3; */
+  /* padding: 2%; */
+
+}
+
+.instrumentos #instrumento{
+width: 100%;
+
+}
+
+.instrumentos a{
+  display: grid;
+  /* justify-content:flex-start; */
+  padding: 1%;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+/* **********secciones main******************** */
+
+.secGuitar{
+    border: 1.5px rgb(0, 0, 0) dashed;
+    display: flex ;
+    flex-wrap: wrap;
+}
+
+.productoPrincipal{
+  border: 2px rgb(46, 0, 253) dashed;
+  display: flex;
+	flex-wrap: wrap;
+
+}
+
+.guitarPrincipal{
+    border: 5px rgb(255, 0, 0) dashed;
+    width: 60%;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex ;
+    flex-wrap: nowrap;
+}
+
+
+.recomendados{
+  border: 5px rgb(0, 139, 253) dashed;
+  padding-top: 0%;
+  width: 25%;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+}
+
+.grid-variosCompra{
+  border: 5px rgb(13, 253, 0) dashed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 5px;
+  background-color: #ffffff;
+  padding: 2%;
+  
+}
+
+
+/* **********secciones HIJAS main******************** */
+.recomendados a{
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.recomendados section, img, h4{
+  padding: 2%;
+}
+
+
+
+#orange{
+  background-color: orange;
+}
+
+#guitarCompra{
+    /* border: 0.5px rgb(0, 139, 253) dashed; */
+    /* width: 50%; */
+    width: 50%;
+    margin: 5%;
+}
+
+#guitarCaracteristicas
+{
+    /* border: 0.5px rgb(0, 253, 55) dashed; */
+    margin: 0%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    background-color: rgb(245, 244, 244);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#guitarCaracteristicas article
+{
+    /* border: 0.5px rgb(0, 194, 253) dashed; */
+    margin-top: 5%;
+    width: 80%;
+
+}
+
+#marca{
+    /* border: 0.5px rgb(42, 253, 0) dashed; */
+    width: 80%;
+}
+
+
+.grid-variosCompra article{
+  width: 90%;
+  padding: 2%;
+
+}
+
+#instrumento{
+  width: 80%;
+}
+
+#instrumento1{
+  width: 50%;
+}
+
+
+
+.grid-variosCompra a{
+  display: grid;
+  /* justify-content:flex-start; */
+  padding: 1%;
+  text-align: center;
+
+}
+
+
+article{
+    padding: 5%;
+}
+
+
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+button:hover,
+button:hover ~ button {
+  background-color: orange;
+  color: rgb(255, 255, 255);
+}
+
+input:hover,
+input:hover ~ input {
+  background-color: orangered;
+  color: rgb(255, 255, 255);
+}
+
+/* label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  } */
+
+
+
+  /* input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  } */
+
+
+/* **************************es de las estrellas */
+  #form {
+    /* width: 250px; */
+    margin: 0 px;
+    /* height: 0px; */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  .valoracion{
+    /* border: 0.5px rgb(253, 59, 0) dashed; */
+    text-align: left;
+  }
+
+  #form label {
+    font-size: 25px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .label {
+    color: grey;
+    /* width: 50px; */
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  /* ///////////////////////// */
+
+
+
+
+
+  footer section article{
+    width: 60%;
+display: block;
+align-items:flex-end;
+    /* display: grid; */
+    border-top: 0.5px white dotted;
+  /* align-self: flex-start; */
+  /* justify-self:left; */
+  /* background-color: rebeccapurple; */
+
+
+
+  }
+  
+  footer p {
+    color: white;
+    /* background-color: rebeccapurple; */
+
+
+  }
+
+  footer{
+    /* border: 0.5px rgb(0, 194, 253) dashed; */
+    height: 30%;
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+  .footerMain{
+  width: 1000px;
+
+  }
+  .footerInicio{
+
+    border-top: 0.5px white double;
+    padding:2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .footerFin{
+
+    padding: 2%;
+    border-top: 0.5px rgb(136, 136, 136) double ;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .footerInicio a{
+color: white;
+
+  }
+
+  .footerFin p{
+    color: rgb(136, 136, 136);
+  }
+
+  
+  /* @media screen and (max-width: 1000px){
+  }
+
+
+  @media screen and (max-width: 767px){
+    
+  }*/
+
+  @media screen and (max-width: 767px){
+      /* html{
+    height: 101%;
+    } */
+ 
+    main{
+      height: auto;
+      width: auto;
+    }
+    body{
+      background-color: rgb(238, 255, 0);
+      height: auto;
+    }
+
+    #instrumento{
+      width: 20px;
+    }
+
+    .guitarPrincipal{
+      /* border: 5px rgb(255, 0, 0) dashed; */
+      width: 100px;
+      margin-top: 0px;
+      margin-left: 0px;
+      display: flex ;
+      flex-wrap: nowrap;
+  }
+  
+
+    footer{
+    font-size: 80%;
+    height: 50%;
+    }
+    
+    .footerFin{
+      border-top: 0.5px rgb(136, 136, 136) double ;
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+
+  } 
