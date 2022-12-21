@@ -5,269 +5,269 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fasthand&family=Lexend:wght@400;700&family=Noto+Sans+JP:wght@900&family=Nunito:wght@400;800&family=Poppins:wght@400;600;800&display=swap');
 *{font-family: "Poppins", sans-serif; color: rgb(58, 29, 9);}
 
-.grid-layout{
-  height: 100%;
-    border:1px dotted rgb(7, 7, 7);
-    background-color: rgb(221, 218, 216);
-    display: grid;
-    grid-template-areas: 'header header'
-                         'nav nav'
-                         'main main'
-                         'footer footer'
-                         ;
+@media screen and (min-width:500px){
+  .grid-layout{
+    height: 100%;
+      border:1px dotted rgb(7, 7, 7);
+      background-color: rgb(221, 218, 216);
+      display: grid;
+      grid-template-areas: 'header header'
+                          'nav nav'
+                          'main main'
+                          'footer footer'
+                          ;
 
-    grid-template-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+    }
+
+    header{
+      grid-area: header;
+      background-color: antiquewhite;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+    }
+
+    nav{
+      grid-area: nav;
+      background-color: rgb(255, 253, 127);
+      display: grid;
+      grid-template-columns: repeat(6, 12%);
+      justify-content: center;
+      text-align: center;
+      padding: 0.5%;
+    }
+
+    main{
+      grid-area: main;
+      background-color: bisque;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2%;
+    }
+
+    footer{
+      grid-area: footer;
+      background-color: lightgray;
+      display: grid;
+      grid-template-areas: 'footerInicio footerInicio'
+                          'footerFin footerFin';
+    }
+
+    .secMain{
+      display: grid;
+      grid-template-areas: 'guitarPrincipal recomendados'
+                          'relacionados relacionados';
+      grid-template-columns: 65% 35%;
+      grid-template-rows: auto 30%;
+
+      /* gap: 1%; */
+    }
+    .guitarPrincipal{
+      background-color: rgb(229, 255, 170);
+      grid-area: guitarPrincipal;
+      display: grid;
+      grid-template-areas: 'guitarCompra guitarCaracteristicas'
+                          'video video';
+      grid-template-columns: 50% auto;
+      gap: 3%;
+    }
+
+    #guitarCompra{
+      background-color: blueviolet;
+      grid-area: guitarCompra;
+      display: grid;
+      justify-items: center;
+      margin-top: 5%;
+    }
+    #guitarCaracteristicas{
+      background-color: rgb(43, 226, 165);
+      grid-area: guitarCaracteristicas;
+      display: flex;
+      flex-flow: column;
+      margin-top: 5%;
+    }
+    #video{
+      grid-area: video;
+    }
+    .recomendados{
+      background-color: rgb(243, 253, 156);
+      grid-area: recomendados;
+      display: grid;
+      /* grid-auto-rows: auto; */
+      text-align: center;
+    }
+    .relacionados{
+      background-color: rgb(255, 238, 206);
+      grid-area: relacionados;
+    }
+    .variosCompra{
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      text-align: center;
+    }
+
+    .footerInicio{
+      grid-area: footerInicio;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-around;
+    }
+
+    .footerFin{
+      grid-area: footerFin;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-around;
+
+    }
+
+    .producto{
+      background-color: azure;
+      display: grid;
+      justify-items: center;
+      gap: 1%;
+    }
+
+    .formCantidad{
+      display: flex;
+      /* display: inline-flex; */
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    #marca{
+      width: 20%;
+    }
+    #instrumento{
+      margin-top: 4%;
+      width: 35%;
+    }
+
+    #instrumentoKey{
+      margin-top: 4%;
+      width: 80%;
+    }
+
+    #precio{
+      font-family: 'Lexend', sans-serif;
+      font-weight:800;
+      color: rgb(255, 51, 0);
+      text-decoration: 4px dashed black;
+      font-size: 250%;
+    }
+
+    #precioVarios{
+      font-family: 'Lexend', sans-serif;
+      font-weight:800;
+      color: rgb(255, 51, 0);
+      /* text-decoration: 4px dashed black; */
+      font-size: 150%;
+      margin-top: -10px ;
+    }
+    sup{
+      font-weight: 800;
+      font-size: 50%;
+      color: rgb(255, 51, 0);
+    }
+    
+    video{
+      width: 100%;
+    }
+    #stock{
+      color: rgb(1, 109, 28);
+      text-decoration: 4px dashed black;
+      font-size: 150%;
+      font-weight: 800;
+    }
+    #titulos{
+      margin-left: 3%;
+    }
+
+    h3{
+      font-family: 'Lexend', sans-serif;
+      font-weight:800;
+      color: rgb(255, 51, 0);
+    }
+    strong{
+      color: rgb(199, 97, 60);
+      margin-right: 2%;
+    }
+
+    nav a{
+      /* background-color: rgb(199, 199, 255); */
+      border-right: 1px rgb(180, 180, 180) double;
+    }
+    a{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+    }
+
+    a:hover{
+      color: rgb(247, 69, 5);
+    }
+
+    nav:hover,
+    nav:hover ~ nav{
+      color: antiquewhite;
+    }
+  /***************** seccion para los botonos de cantidades */
+  button:hover,
+  button:hover ~ button {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+
   }
 
-  header{
-    grid-area: header;
-    background-color: antiquewhite;
+  input:hover,
+  input:hover ~ input {
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+  }
+
+  /***************************** seccion para las estrellas */
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  .label {
+    color: grey;
+    /* width: 50px; */
+  }
+
+  #valoracionParrafo{
+    margin-right: 3%;
+    color: chocolate;
+  }
+
+  .estrellas {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+  .formEstrellas{
     display: flex;
-    justify-content:space-around;
+    flex-wrap: nowrap;
     align-items: center;
   }
 
-  nav{
-    grid-area: nav;
-    background-color: rgb(255, 253, 127);
-    display: grid;
-    grid-template-columns: repeat(6, 12%);
-    justify-content: center;
-    text-align: center;
-    padding: 0.5%;
-  }
-
-  main{
-    grid-area: main;
-    background-color: bisque;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
-  }
-
-  footer{
-    grid-area: footer;
-    background-color: lightgray;
-    display: grid;
-    grid-template-areas: 'footerInicio footerInicio'
-                         'footerFin footerFin';
-  }
-
-  .secMain{
-    display: grid;
-    grid-template-areas: 'guitarPrincipal recomendados'
-                        'relacionados relacionados';
-    grid-template-columns: 65% 35%;
-    grid-template-rows: auto 30%;
-
-    /* gap: 1%; */
-  }
-  .guitarPrincipal{
-    background-color: rgb(229, 255, 170);
-    grid-area: guitarPrincipal;
-    display: grid;
-    grid-template-areas: 'guitarCompra guitarCaracteristicas'
-                         'video video';
-    grid-template-columns: 50% auto;
-    gap: 3%;
-  }
-
-  #guitarCompra{
-    background-color: blueviolet;
-    grid-area: guitarCompra;
-    display: grid;
-    justify-items: center;
-    margin-top: 5%;
-  }
-  #guitarCaracteristicas{
-    background-color: rgb(43, 226, 165);
-    grid-area: guitarCaracteristicas;
-    display: flex;
-    flex-flow: column;
-    margin-top: 5%;
-  }
-  #video{
-    grid-area: video;
-  }
-  .recomendados{
-    background-color: rgb(243, 253, 156);
-    grid-area: recomendados;
-    display: grid;
-    /* grid-auto-rows: auto; */
-    text-align: center;
-  }
-  .relacionados{
-    background-color: rgb(255, 238, 206);
-    grid-area: relacionados;
-  }
-  .variosCompra{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    text-align: center;
-  }
-
-  .footerInicio{
-    grid-area: footerInicio;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-  }
-
-  .footerFin{
-    grid-area: footerFin;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-
-  }
-
-  .producto{
-    background-color: azure;
-    display: grid;
-    justify-items: center;
-    gap: 1%;
-  }
-
-.formCantidad{
-  display: flex;
-  /* display: inline-flex; */
-  flex-wrap: wrap;
-  gap: 10px;
-}
-  #marca{
-    width: 20%;
-  }
-  #instrumento{
-    margin-top: 4%;
-    width: 35%;
-  }
-
-  #instrumentoKey{
-    margin-top: 4%;
-    width: 80%;
-  }
-
-  #precio{
-    font-family: 'Lexend', sans-serif;
-    font-weight:800;
-    color: rgb(255, 51, 0);
-    text-decoration: 4px dashed black;
-    font-size: 250%;
-  }
-
-  #precioVarios{
-    font-family: 'Lexend', sans-serif;
-    font-weight:800;
-    color: rgb(255, 51, 0);
-    /* text-decoration: 4px dashed black; */
+  .formEstrellas label {
     font-size: 150%;
-    margin-top: -10px ;
   }
-  sup{
-    font-weight: 800;
-    font-size: 50%;
-    color: rgb(255, 51, 0);
-  }
-  
-  video{
-    width: 100%;
-  }
-  #stock{
-    color: rgb(1, 109, 28);
-    text-decoration: 4px dashed black;
-    font-size: 150%;
-    font-weight: 800;
-  }
-  #titulos{
-    margin-left: 3%;
-  }
-
-  h3{
-    font-family: 'Lexend', sans-serif;
-    font-weight:800;
-    color: rgb(255, 51, 0);
-  }
-  strong{
-    color: rgb(199, 97, 60);
-    margin-right: 2%;
-  }
-
-  nav a{
-    /* background-color: rgb(199, 199, 255); */
-    border-right: 1px rgb(180, 180, 180) double;
-  }
-  a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-  }
-
-  a:hover{
-    color: rgb(247, 69, 5);
-  }
-
-  nav:hover,
-  nav:hover ~ nav{
-    color: antiquewhite;
-  }
- /***************** seccion para los botonos de cantidades */
-button:hover,
-button:hover ~ button {
-  background-color: orange;
-  color: rgb(255, 255, 255);
-
 }
-
-input:hover,
-input:hover ~ input {
-  background-color: orangered;
-  color: rgb(255, 255, 255);
-}
-
-/***************************** seccion para las estrellas */
-label:hover,
-label:hover ~ label {
-  color: orange;
-}
-
-input[type="radio"]:checked ~ label {
-  color: orange;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-.label {
-  color: grey;
-  /* width: 50px; */
-}
-
-#valoracionParrafo{
-  margin-right: 3%;
-  color: chocolate;
-}
-
-.estrellas {
-  direction: rtl;
-  unicode-bidi: bidi-override;
-}
-
-.formEstrellas{
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.formEstrellas label {
-  font-size: 150%;
-}
-
 /* ------------------------------------------------------------------------------------------------- */
 
 
-@media screen and (max-width: 400px){
-
+@media screen and (min-width:480px){
 
   .grid-layout{
     height: 100%;
