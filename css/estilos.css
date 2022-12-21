@@ -170,9 +170,8 @@
     color: rgb(255, 51, 0);
   }
   
-  #video{
-    font-family: 'Architects Daughter', cursive;
-    font-size: 150%;
+  video{
+    width: 100%;
   }
   #stock{
     color: rgb(1, 109, 28);
@@ -323,7 +322,7 @@ input[type="radio"] {
       grid-template-areas: 'guitarPrincipal recomendados'
                           'relacionados relacionados';
       grid-template-columns: auto 35%;
-      grid-template-rows: auto 30%;
+      /* grid-template-rows: auto auto; */
   
       /* gap: 1%; */
     }
@@ -333,17 +332,22 @@ input[type="radio"] {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      gap: 10px;
     }
   
     #guitarCompra{
       background-color: blueviolet;
       grid-area: guitarCompra;
-      
-      /* display: grid; */
-      /* justify-items: center; */
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       /* margin-top: 5%; */
-      height: 30%;
     }
+
+    video{
+      width: 100%;
+    }
+
     #guitarCaracteristicas{
       background-color: rgb(43, 226, 165);
       grid-area: guitarCaracteristicas;
@@ -409,7 +413,9 @@ input[type="radio"] {
     #guitarGrande{
       transform: rotate(90deg);
       width: 30%;
-      /* height: 50%; */
+      /* margin-top: -80px; */
+      /* padding: 0%; */
+      /* height: 200%; */
     }
     #instrumento{
       margin-top: 4%;
