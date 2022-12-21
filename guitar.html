@@ -3,50 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Guitar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-    <head>
-        <!-- <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-        <title>Music Store</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
+    <body class="grid-layout">
+
         <header>
-            <a href="index.html"><img class="logo" src="rsc/logo2.jpg" alt=""></a>
-            <a href="shop.html"><img class="carrito" src="rsc/carrito.png" alt="" ></a>
+            <a href="index.html"><img class="logo" src="rsc/logo2.jpg" alt="" width= "10%"></a>
+            <a href="shop.html"><img class="carrito" src="rsc/carrito.png" alt="" width="50px"></a>
         </header>
+
         <nav>
-            <ul>
-                <li><a href="">Guitarras</a></li>
-                <li><a href="">Teclado</a></li>
-                <li><a href="">Baterias</a></li>
-                <li><a href="">Bajos</a></li>
-                <li><a href="">Microfonos</a></li>
-                <li><a href="">Software</a></li>
-            </ul>
+                <a href="">Guitarras</a>
+                <a href="">Teclado</a>
+                <a href="">Baterias</a>
+                <a href="">Bajos</a>
+                <a href="">Microfonos</a>
+                <a href="">Software</a>
         </nav>
+
         <main class="secGuitar">
 
-            <section class="productoPrincipal">
+            <section class="secMain">
 
                 <section class="guitarPrincipal">
-                    <img id="guitarCompra" src="rsc/guitarra.png" alt="" srcset="">
+                    <section id="guitarCompra">
+                        <img src="rsc/guitarra.png" alt="" width="70%">
+                    </section>
                     <section id="guitarCaracteristicas">
-                        <img id="marca" src="rsc/fender.png" alt="" srcset="">
+                        <img src="rsc/fender.png" alt="" srcset="" width="50%">
                         <article>
                             <h3>Guitarra Fender</h3><br>
-                                <p>Marca: Fender</p>
-                                <p>Modelo: A-300</p>
-                                <p>Color: Blanco</p>
-                                <p>Material: Madera</p>
-                                <p>Prime: PRIME</p>
+                            <p><strong>Marca: </strong>Fender</p>
+                            <p><strong>Modelo: </strong>A-300</p>
+                            <p><strong>Color: </strong>Blanco</p>
+                            <p><strong>Material: </strong>Madera</p>
+                            <p><strong>Prime: </strong>PRIME</p>                          
                         </article>
-                        <article id="form">
-                            <p class="valoracion">Valoración Producto</p>
-                            <p class="clasificacion"><!--
+                        <article class="formEstrellas">
+                            <p id="valoracionParrafo">Valoración Producto</p>
+                            <p class="estrellas"><!--
+                                --><input id="radio1" type="radio" name="estrellas" value="5"><!--
                                 --><label class="label" for="radio1">★</label><!--
                                 --><input id="radio2" type="radio" name="estrellas" value="4"><!--
                                 --><label class="label" for="radio2">★</label><!--
@@ -61,10 +58,10 @@
     
                         <article>
                             <h2 id="precio">450.<sup>99</sup>€</h2>
-                            <p>Entrega GRATIS para productos PRIME</p>
+                            <p>Entrega <strong>GRATIS</strong>para productos PRIME</p>
                             <p id="stock">En Stock</p>
-                            <form action="#">
-                                <label for="lang">Cantidad</label>
+                            <form class="formCantidad" action="#">
+                                <label for="lang">Cantidad:</label>
                                 <select name="cantidad" id="lang">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -72,9 +69,12 @@
                                     <option value="4">4</option>
                                 </select>
                                 <input type="submit" value="Añadir a la cesta"/>
+                                <button>Comprar Ahora</button>
                             </form>
-                            <button>Comprar Ahora</button>
                         </article>
+                    </section>
+                    <section id="video">
+                        <p id="video">Seccion para un video</p>
                     </section>
                 </section>
                 
@@ -86,11 +86,11 @@
                         <a href="guitar.html" >
                             <img src="rsc/ibanez.png" alt="" width="40%">
                             <section>
-                                <img src="rsc/guitar2.jpg" alt="">
+                                <img id="instrumento" src="rsc/guitarra.png" alt="" >
                             </section>
                             <section>
                                 <p>Ibanez 500x</p>
-                                <h4>150.<sup>00</sup> €</h4>
+                                <p id="precioVarios">150.<sup>00</sup> €</p>
                             </section>
                         </a>
                     </article>
@@ -98,11 +98,11 @@
                         <a href="guitar.html" >
                             <img src="rsc/yamaha.png" alt="" width="40%">
                             <section>
-                                <img src="rsc/guitar1.jpg" alt="">
+                                <img id="instrumento" src="rsc/guitarra2.png" alt="">
                             </section>
                             <section>
                                 <p>Yamaha Rev-5</p>
-                                <h4>750.<sup>00</sup> €</h4>
+                                <p id="precioVarios">750.<sup>00</sup> €</p>
                             </section>
                         </a>                    
                     </article> 
@@ -110,90 +110,77 @@
                         <a href="guitar.html" >
                             <img src="rsc/fender.png" alt="" width="40%">
                             <section>
-                                <img src="rsc/guitar3.jpg" alt="">
+                                <img id="instrumento" src="rsc/guitarra3.png" alt="">
                             </section>
                             <section>
                                 <p>Fender Telecaster 300c</p>
-                                <h4>2100.<sup>00</sup> €</h4>
+                                <p id="precioVarios">2100.<sup>00</sup> €</p>
                             </section>
                         </a>                    
                     </article>
                 </aside>
-            </section>
             
-
-
-
-            <section class="grid-variosCompra">
-                <!-- <article>
-                    <h3>Productos Recomendados</h3>
-                </article> -->
-                <article>
-                    <a href="guitar.html" >
-                        <img src="rsc/ibanez.png" alt="" width="40%">
-                        <section>
-                            <img id="instrumento" src="rsc/guitar2.jpg" alt="">
-                        </section>
-                        <section>
-                            <p>Ibanez 500x</p>
-                            <h4>150.<sup>00</sup> €</h4>
-                        </section>
-                    </a>
-                </article>
-                <article>
-                    <a href="guitar.html" >
-                        <img src="rsc/yamaha.png" alt="" width="40%">
-                        <section>
-                            <img id="instrumento" src="rsc/guitar1.jpg" alt="">
-                        </section>
-                        <section>
-                            <p>Yamaha Rev-5</p>
-                            <h4>750.<sup>00</sup> €</h4>
-                        </section>
-                    </a>                    
-                </article> 
-                <article>
-                    <a href="guitar.html" >
-                        <img src="rsc/guitar-brand-logo-fender.jpg" alt="" width="40%">
-                        <section>
-                            <img id="instrumento" src="rsc/guitar3.jpg" alt="">
-                        </section>
-                        <section>
-                            <p>Fender Telecaster 300c</p>
-                            <h4>2100.<sup>00</sup> €</h4>
-                        </section>
-                    </a>                    
-                </article>
-                <article>
-                    <a href="guitar.html" >
-                        <img src="rsc/yamaha.png" alt="" width="40%">
-                        <section>
-                            <img id="instrumento" src="rsc/teclado2.jpg" alt="">
-                        </section>
-                        <section>
-                            <p>Yamaha Rev-5</p>
-                            <h4>750.<sup>00</sup> €</h4>
-                        </section>
-                    </a>                    
-                </article> 
-                <article>
-                    <a href="guitar.html" >
-                        <img src="rsc/yamaha.png" alt="" width="40%">
-                        <section>
-                            <img id="instrumento" src="rsc/teclado1.jpg" alt="">
-                        </section>
-                        <section>
-                            <p>Fender Telecaster 300c</p>
-                            <h4>2100.<sup>00</sup> €</h4>
-                        </section>
-                    </a>                    
-                </article>
+                <section class="relacionados" >
+                    <h3 id="titulos">Productos Relacionados</h3>
+                    <section class="variosCompra">
+                        <article>
+                            <a class="producto" href="guitar.html" >
+                                <img src="rsc/ibanez.png" alt="" width="40%">
+                                <img id="instrumento" src="rsc/guitarra3.png" alt="">
+                                <section>
+                                    <p>Ibanez 500x</p>
+                                    <p id="precioVarios">150.<sup>00</sup> €</p>
+                                </section>
+                            </a>
+                        </article>
+                        <article>
+                            <a class="producto" href="guitar.html" >
+                                <img src="rsc/yamaha.png" alt="" width="40%">
+                                <img id="instrumento" src="rsc/guitarra2.png" alt="">
+                                <section>
+                                    <p>Yamaha Rev-5</p>
+                                    <p id="precioVarios">750.<sup>00</sup> €</p>
+                                </section>
+                            </a>                    
+                        </article> 
+                        <article>
+                            <a class="producto" href="guitar.html" >
+                                <img src="rsc/fender.png" alt="" width="40%">
+                                <img id="instrumentoKey" src="rsc/key1.png" alt="">
+                                <section>
+                                    <p>Fender Telecaster 300c</p>
+                                    <p id="precioVarios">2100.<sup>00</sup> €</p>
+                                </section>
+                            </a>                    
+                        </article>
+                        <article>
+                            <a class="producto" href="guitar.html" >
+                                <img src="rsc/yamaha.png" alt="" width="40%">
+                                <img id="instrumentoKey" src="rsc/key2.png" alt="">
+                                <section>
+                                    <p>Yamaha Rev-5</p>
+                                    <p id="precioVarios">750.<sup>00</sup> €</p>
+                                </section>
+                            </a>                    
+                        </article> 
+                        <article>
+                            <a class="producto" href="guitar.html" >
+                                <img src="rsc/yamaha.png" alt="" width="40%">
+                                <img id="instrumentoKey" src="rsc/key3.png" alt="">
+                                <section>
+                                    <p>Fender Telecaster 300c</p>
+                                    <p id="precioVarios">2100.<sup>00</sup> €</p>
+                                </section>
+                            </a>                    
+                        </article>
+                    </section>
+                </section>
             </section>
-            
-
+        
         </main>
+
         <footer>
-            <section class="footer main">
+            <!-- <section class="footer main"> -->
                 <section class="footerInicio">
                     <article>
                         <h3>Productos</h3>
@@ -228,9 +215,9 @@
                     <p>&copy; 2022 Pool Production</p>
                 </section>
     
-            </section>
+            <!-- </section> -->
     
         </footer>
         
-</body>
+    </body>
 </html>
