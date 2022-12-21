@@ -266,7 +266,7 @@ input[type="radio"] {
 /* ------------------------------------------------------------------------------------------------- */
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 400px){
 
 
   .grid-layout{
