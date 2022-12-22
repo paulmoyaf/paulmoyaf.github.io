@@ -3,9 +3,9 @@
   height: 100%;
 } */
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fasthand&family=Lexend:wght@400;700&family=Noto+Sans+JP:wght@900&family=Nunito:wght@400;800&family=Poppins:wght@400;600;800&display=swap');
-*{font-family: "Poppins", sans-serif; color: rgb(58, 29, 9);}
 
-@media (min-width: 481px){
+
+@media screen and (min-width: 768px){
   .grid-layout{
     height: 100%;
       border:1px dotted rgb(7, 7, 7);
@@ -20,28 +20,43 @@
       grid-template-rows: auto auto auto auto;
     }
 
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif; color: rgb(128, 62, 18);
+      font-size: 62.5%;
+      font-size: 10px;
+    }
+    
     header{
       grid-area: header;
-      background-color: antiquewhite;
+      background-color: rgb(129, 129, 129);
       display: flex;
-      justify-content:space-around;
-      align-items: center;
+      justify-content:space-between;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 0.5%;
+      padding-bottom: 0.5%;
+      color: white;
     }
 
     nav{
       grid-area: nav;
       background-color: rgb(255, 253, 127);
-      display: grid;
-      grid-template-columns: repeat(6, 12%);
-      justify-content: center;
-      text-align: center;
-      padding: 0.5%;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      gap: 10%;
+      width: auto;
+      align-items: center;
     }
+
 
     main{
       grid-area: main;
       background-color: bisque;
-      width: 75%;
+      width: 80%;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 2%;
@@ -53,6 +68,39 @@
       display: grid;
       grid-template-areas: 'footerInicio footerInicio'
                           'footerFin footerFin';
+    }
+
+
+    .navlinks{
+      /* background-color: aqua; */
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav div.main_list ul li {
+      /* background-color: rgb(43, 241, 3);   */
+      padding-left: 2rem;
+      list-style: none;
+    }
+    
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        /* color: #fff; */
+        line-height: 65px;
+        font-size: 1rem;
+    }
+    
+    .nav div.main_list ul li a:hover {
+        color: orange;
+    }
+    
+    .carrito{
+      /* background-color: blue; */
+      padding-left: 2rem;
+      width: 2.5rem;
+    }
+    .logoShop{
+      width: 8rem;
     }
 
     .secMain{
@@ -79,14 +127,15 @@
       grid-area: guitarCompra;
       display: grid;
       justify-items: center;
-      margin-top: 5%;
+      padding-top: 5%;
     }
     #guitarCaracteristicas{
       background-color: rgb(43, 226, 165);
       grid-area: guitarCaracteristicas;
       display: flex;
       flex-flow: column;
-      margin-top: 5%;
+      padding-top: 5%;
+      padding-left: 5%;
     }
     #video{
       grid-area: video;
@@ -194,10 +243,7 @@
       margin-right: 2%;
     }
 
-    nav a{
-      /* background-color: rgb(199, 199, 255); */
-      border-right: 1px rgb(180, 180, 180) double;
-    }
+  
     a{
       text-decoration: none;
       color: rgb(0, 0, 0);
@@ -267,7 +313,17 @@
 /* ------------------------------------------------------------------------------------------------- */
 
 
-@media (min-width: 320px) and (max-width:480px){
+@media screen and (max-width:768px) {
+
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; color: rgb(128, 62, 18);
+    font-size: 62.5%;
+    font-size: 10px;
+  }
+
   .grid-layout{
     height: 100%;
       border:1px dotted rgb(7, 7, 7);
@@ -293,12 +349,12 @@
     nav{
       grid-area: nav;
       background-color: rgb(255, 253, 127);
-      display: grid;
-      grid-template-columns: repeat(6, 15%);
-      justify-content: center;
-      text-align: center;
-      padding: 0.5%;
-      font-size: small;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      gap: 1%;
+      width: auto;
+      align-items: center;
     }
   
     main{
@@ -316,6 +372,39 @@
                            'footerFin footerFin';
     }
   
+    .navlinks{
+      /* background-color: aqua; */
+      display: grid;
+      /* gap: -40px; */
+      /* gap: 1%; */
+      /* flex-direction: row; */
+      justify-items: center;    }
+    
+    .nav div.main_list ul li {
+      /* background-color: rgb(43, 241, 3);   */
+      /* padding-left: 2rem; */
+      list-style: none;
+    }
+    
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        /* color: #fff; */
+        line-height: 65px;
+        font-size: 1rem;
+    }
+    
+    .nav div.main_list ul li a:hover {
+        color: orange;
+    }
+    
+    .carrito{
+      width: 2.5rem;
+    }
+    
+    .logoShop{
+      width: 9rem;
+    }
+
     .secMain{
       display: grid;
       grid-template-areas: 'guitarPrincipal recomendados'
@@ -476,11 +565,7 @@
       color: rgb(199, 97, 60);
       margin-right: 2%;
     }
-  
-    nav a{
-      /* background-color: rgb(199, 199, 255); */
-      border-right: 1px rgb(180, 180, 180) double;
-    }
+
     a{
       text-decoration: none;
       color: rgb(0, 0, 0);
@@ -549,3 +634,4 @@
 
 }
 
+/* ----------------------------------------------------------------------------------------------------------- */

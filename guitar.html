@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Guitar</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
     <body class="grid-layout">
 
         <header>
-            <a href="index.html"><img class="logo" src="rsc/logo2.jpg" alt="" width= "10%"></a>
-            <a href="shop.html"><img class="carrito" src="rsc/carrito.png" alt="" width="50px"></a>
+            <a href="#">paul.moyaf@gmail.com</a>
+            <a href="#">679034040</a>
         </header>
 
-        <nav>
-                <a href="">Guitarras</a>
-                <a href="">Teclado</a>
-                <a href="">Baterias</a>
-                <a href="">Bajos</a>
-                <a href="">Microfonos</a>
-                <a href="">Software</a>
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html"><img class="logoShop" src="rsc/logoShop.png" alt=""></a>
+            </div>
+            <div class="container">
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Guitarras</a></li>
+                        <li><a href="#">Teclados</a></li>
+                        <li><a href="#">Software</a></li>
+                        <a href="shop.html"><img class="carrito" src="rsc/carrito.png" alt=""></a>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
         </nav>
 
         <main class="secGuitar">
@@ -218,6 +231,6 @@
             <!-- </section> -->
     
         </footer>
-        
+        <script src="js/scripts.js"></script>
     </body>
 </html>
