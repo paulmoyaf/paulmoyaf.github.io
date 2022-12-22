@@ -43,7 +43,7 @@
 
     nav{
       grid-area: nav;
-      background-color: rgb(255, 253, 127);
+      background-color: rgb(129, 189, 204);
       display: flex;
       list-style: none;
       justify-content: space-around;
@@ -348,7 +348,7 @@
   
     nav{
       grid-area: nav;
-      background-color: rgb(255, 253, 127);
+      background-color: rgb(129, 189, 204);
       display: flex;
       list-style: none;
       justify-content: space-around;
