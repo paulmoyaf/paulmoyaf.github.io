@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fasthand&family=Lexend:wght@400;700&family=Noto+Sans+JP:wght@900&family=Nunito:wght@400;800&family=Poppins:wght@400;600;800&display=swap');
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 481px){
   .grid-layout{
     height: 100%;
       border:1px dotted rgb(7, 7, 7);
@@ -313,7 +313,7 @@
 /* ------------------------------------------------------------------------------------------------- */
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:480px) {
 
   body{
     margin: 0;
@@ -352,9 +352,9 @@
       display: flex;
       list-style: none;
       justify-content: space-around;
-      gap: 1%;
       width: auto;
       align-items: center;
+      padding: 2%;
     }
   
     main{
@@ -362,6 +362,7 @@
       background-color: bisque;
       margin-bottom: 2%;
       width: auto;
+      font-size: 1rem;
     }
   
     footer{
@@ -373,12 +374,15 @@
     }
   
     .navlinks{
+
       /* background-color: aqua; */
       display: grid;
+      justify-items: right;
       /* gap: -40px; */
       /* gap: 1%; */
       /* flex-direction: row; */
-      justify-items: center;    }
+      /* justify-items: center; */
+    }
     
     .nav div.main_list ul li {
       /* background-color: rgb(43, 241, 3);   */
@@ -398,11 +402,12 @@
     }
     
     .carrito{
-      width: 2.5rem;
+      width: 30%;
+      padding-left: 62%;
     }
     
     .logoShop{
-      width: 9rem;
+      width: 70%;
     }
 
     .secMain{
@@ -553,8 +558,7 @@
     #tituloRecomendado{
       display: flex;
       flex-direction: column;
-      font-size:xx-small;
-    }
+      font-size: 1rem;    }
   
     h3{
       font-family: 'Lexend', sans-serif;
