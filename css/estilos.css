@@ -355,7 +355,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 0.2px;
+      gap: 0.1px;
       border-top: 0.5px rgb(165, 165, 165);
       border-style:groove;
       border-left: none;
