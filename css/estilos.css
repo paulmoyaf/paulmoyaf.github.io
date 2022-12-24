@@ -353,9 +353,13 @@
       grid-area: nav;
       background-color: rgb(255, 255, 255);
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      gap: 15%;
+      gap: 1%;
+      border-top: 0.5px rgb(165, 165, 165);
+      border-style:groove;
+      border-left: none;
+      border-right: none;
     }
   
     main{
@@ -376,9 +380,6 @@
   
     .navlinks{
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 5%;
     }
     
     .nav div.main_list ul li {
@@ -394,10 +395,13 @@
     .nav div.main_list ul li a:hover {
         color: orange;
     }
-        
+    
+    .carrito{
+      width: 2rem;
+    }
     .logoShop{
-      width: 80%;
-      padding-left: 15%;
+      width: 7rem;
+      /* padding-left: 15%; */
     }
 
     .secMain{
@@ -414,7 +418,7 @@
     }
   
     #guitarCompra{
-      /* background-color: blueviolet; */
+      background-color: white;
       grid-area: guitarCompra;
       display: flex;
       flex-direction: row;
