@@ -43,7 +43,7 @@
 
     nav{
       grid-area: nav;
-      background-color: rgb(171, 219, 231);
+      background-color: rgb(251, 254, 255);
       display: flex;
       list-style: none;
       justify-content: space-around;
@@ -313,7 +313,7 @@
 /* ------------------------------------------------------------------------------------------------- */
 
 
-@media screen and (max-width:768px) {
+@media (max-width:768px) {
 
   body{
     margin: 0;
