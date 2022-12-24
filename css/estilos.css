@@ -355,7 +355,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1%;
+      gap: 0.2px;
       border-top: 0.5px rgb(165, 165, 165);
       border-style:groove;
       border-left: none;
@@ -376,6 +376,8 @@
       grid-template-areas: 'footerInicio footerInicio'
                            'footerFin footerFin';
       font-size: 1.5rem;
+      padding-left: 2%;
+      padding-right: 2%;
     }
   
     .navlinks{
@@ -465,16 +467,17 @@
       display: grid;
       grid-template-columns: auto auto auto;
       justify-content: space-around;
+      gap: 10%;
     }
   
     .footerFin{
       grid-area: footerFin;
-      border-top: 1px black dotted;
+      border-top: 0.5px rgb(136, 136, 136) double ;
       display: grid;
       grid-template-columns: auto auto auto;
       justify-content: space-around;
       color: black;
-  
+      font-size: 1rem;
     }
   
     .producto{
@@ -618,7 +621,7 @@
   }
   
   .formEstrellas label {
-    font-size: 150%;
+    font-size: 120%;
   }
 
 }
