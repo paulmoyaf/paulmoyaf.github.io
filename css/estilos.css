@@ -450,16 +450,13 @@
       text-align: center;
     }
     .relacionados{
-      background-color: rgb(255, 253, 248);
-      /* border-top: 1px rgb(0, 0, 0) dotted; */
+      background-color: rgb(255, 255, 255);
+      border-top: 1px rgb(0, 0, 0) dotted;
       grid-area: relacionados;
     }
     .variosCompra{
-      /* display: grid; */
-      /* grid-template-columns: 20% 20% 20% 20% 20%; */
       display: grid;
       grid-template-columns: auto auto;
-      /* gap: 2%; */
       text-align: center;
     }
   
@@ -481,7 +478,7 @@
     }
   
     .producto{
-      /* background-color: azure; */
+      background-color: rgb(255, 255, 255);
       display: grid;
       justify-items: center;
       gap: 1%;
@@ -513,9 +510,9 @@
     }
   
     #precio{
-      font-family: 'Lexend', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight:800;
-      color: rgb(255, 51, 0);
+      color: orangered;
       text-decoration: 4px dashed black;
       font-size: 250%;
     }
@@ -523,7 +520,7 @@
     #precioVarios{
       font-family: 'Lexend', sans-serif;
       font-weight:800;
-      color: rgb(255, 51, 0);
+      color: orangered;
       /* text-decoration: 4px dashed black; */
       font-size: 150%;
       margin-top: -10px ;
@@ -531,13 +528,13 @@
     sup{
       font-weight: 800;
       font-size: 50%;
-      color: rgb(255, 51, 0);
+      color: orangered;
     }
     
-    #video{
-      font-family: 'Architects Daughter', cursive;
-      font-size: 150%;
+    #labelCantidad{
+      text-decoration: none;
     }
+ 
     #stock{
       color: rgb(1, 109, 28);
       text-decoration: 4px dashed black;
