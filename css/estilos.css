@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fasthand&family=Lexend:wght@400;700&family=Noto+Sans+JP:wght@900&family=Nunito:wght@400;800&family=Poppins:wght@400;600;800&display=swap');
 
 
-@media only screen and (min-width: 1500px){
+@media only screen and (min-width: 2480px){
   .grid-layout{
     height: 100%;
       border:1px dotted rgb(7, 7, 7);
@@ -318,7 +318,7 @@
   body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box;s */
     font-family: "Poppins", sans-serif; color: rgb(128, 62, 18);
     font-size: 62.5%;
     font-size: 10px;
@@ -326,8 +326,8 @@
 
   .grid-layout{
     height: 100%;
-      border:1px dotted rgb(7, 7, 7);
-      background-color: rgb(255, 103, 2);
+      /* border:1px dotted rgb(7, 7, 7); */
+      background-color: rgb(255, 255, 255);
       display: grid;
       grid-template-areas: 'header header'
                            'nav nav'
@@ -340,27 +340,26 @@
   
     header{
       grid-area: header;
-      background-color: antiquewhite;
+      background-color: rgb(53, 53, 53);
       display: flex;
-      justify-content:space-evenly;
+      justify-content:space-around;
       align-items: center;
+      color: aliceblue;
+
     }
   
     nav{
       grid-area: nav;
-      background-color: rgb(171, 219, 231);
+      background-color: rgb(255, 255, 255);
       display: flex;
-      list-style: none;
-      justify-content: space-around;
-      width: auto;
+      justify-content: space-evenly;
       align-items: center;
-      padding: 2%;
+      gap: 15%;
     }
   
     main{
       grid-area: main;
       background-color: bisque;
-      margin-bottom: 2%;
       width: auto;
       font-size: 1rem;
     }
@@ -371,28 +370,22 @@
       display: grid;
       grid-template-areas: 'footerInicio footerInicio'
                            'footerFin footerFin';
+      font-size: 0.8rem;
     }
   
     .navlinks{
-
-      /* background-color: aqua; */
-      display: grid;
-      justify-items: right;
-      /* gap: -40px; */
-      /* gap: 1%; */
-      /* flex-direction: row; */
-      /* justify-items: center; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10%;
     }
     
     .nav div.main_list ul li {
-      /* background-color: rgb(43, 241, 3);   */
-      /* padding-left: 2rem; */
       list-style: none;
     }
     
     .nav div.main_list ul li a {
         text-decoration: none;
-        /* color: #fff; */
         line-height: 65px;
         font-size: 1rem;
     }
@@ -400,74 +393,68 @@
     .nav div.main_list ul li a:hover {
         color: orange;
     }
-    
-    .carrito{
-      width: 30%;
-      padding-left: 62%;
-    }
-    
+        
     .logoShop{
-      width: 70%;
+      width: 200%;
+      padding-left: 15%;
     }
 
     .secMain{
-      display: grid;
-      grid-template-areas: 'guitarPrincipal recomendados'
-                          'relacionados relacionados';
-      grid-template-columns: auto 35%;
-      /* grid-template-rows: auto auto; */
-  
-      /* gap: 1%; */
+      display: flex;
+      flex-direction: column;              
     }
     .guitarPrincipal{
-      background-color: rgb(66, 92, 4);
+      background-color: rgb(255, 255, 255);
       grid-area: guitarPrincipal;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-areas:  'guitarCompra guitarCaracteristicas'
+                            'video video';
       align-items: flex-start;
-      gap: 10px;
     }
   
     #guitarCompra{
-      background-color: blueviolet;
+      /* background-color: blueviolet; */
       grid-area: guitarCompra;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      /* margin-top: 5%; */
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     video{
+      padding-top: 3%;
       width: 100%;
     }
 
     #guitarCaracteristicas{
-      background-color: rgb(43, 226, 165);
+      background-color: rgb(255, 253, 247);
       grid-area: guitarCaracteristicas;
       display: flex;
       flex-flow: column;
-      margin-top: 5%;
       padding: 5%;
     }
     #video{
       grid-area: video;
     }
     .recomendados{
-      background-color: rgb(243, 253, 156);
+      background-color: rgb(255, 255, 255);
       grid-area: recomendados;
       display: flex;
       flex-direction: column;
       text-align: center;
     }
     .relacionados{
-      background-color: rgb(255, 238, 206);
+      background-color: rgb(255, 253, 248);
+      /* border-top: 1px rgb(0, 0, 0) dotted; */
       grid-area: relacionados;
     }
     .variosCompra{
       /* display: grid; */
       /* grid-template-columns: 20% 20% 20% 20% 20%; */
-      display: flex;
-      flex-direction:column;
+      display: grid;
+      grid-template-columns: auto auto;
+      /* gap: 2%; */
       text-align: center;
     }
   
@@ -480,14 +467,16 @@
   
     .footerFin{
       grid-area: footerFin;
+      border-top: 1px black dotted;
       display: grid;
       grid-template-columns: auto auto auto;
       justify-content: space-around;
+      color: black;
   
     }
   
     .producto{
-      background-color: azure;
+      /* background-color: azure; */
       display: grid;
       justify-items: center;
       gap: 1%;
@@ -504,10 +493,10 @@
     }
 
     #guitarGrande{
-      transform: rotate(90deg);
-      width: 30%;
+      /* transform: rotate(90deg); */
+      width: 100%;
       /* margin-top: -80px; */
-      /* padding: 0%; */
+      padding-top: 20%;
       /* height: 200%; */
     }
     #instrumento{
