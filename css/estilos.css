@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fasthand&family=Lexend:wght@400;700&family=Noto+Sans+JP:wght@900&family=Nunito:wght@400;800&family=Poppins:wght@400;600;800&display=swap');
 
 
-@media only screen and (min-width: 2480px){
+/* @media only screen and (min-width: 900px){ */
   .grid-layout{
     height: 100%;
       border:1px dotted rgb(7, 7, 7);
@@ -309,11 +309,11 @@
   .formEstrellas label {
     font-size: 150%;
   }
-}
+
 /* ------------------------------------------------------------------------------------------------- */
 
 
-@media only screen and (min-width:0px) {
+@media only screen and (max-width:850px) {
 
   body{
     margin: 0;
@@ -345,6 +345,7 @@
       justify-content:space-around;
       align-items: center;
       color: aliceblue;
+      font-size: 0.8rem;
 
     }
   
@@ -352,7 +353,7 @@
       grid-area: nav;
       background-color: rgb(255, 255, 255);
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       gap: 15%;
     }
@@ -361,7 +362,7 @@
       grid-area: main;
       background-color: bisque;
       width: auto;
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   
     footer{
@@ -370,14 +371,14 @@
       display: grid;
       grid-template-areas: 'footerInicio footerInicio'
                            'footerFin footerFin';
-      font-size: 0.8rem;
+      font-size: 1.5rem;
     }
   
     .navlinks{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 10%;
+      gap: 5%;
     }
     
     .nav div.main_list ul li {
@@ -387,7 +388,7 @@
     .nav div.main_list ul li a {
         text-decoration: none;
         line-height: 65px;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     .nav div.main_list ul li a:hover {
@@ -395,7 +396,7 @@
     }
         
     .logoShop{
-      width: 200%;
+      width: 80%;
       padding-left: 15%;
     }
 
@@ -488,9 +489,7 @@
     flex-wrap: wrap;
     gap: 10px;
   }
-    #marca{
-      width: 20%;
-    }
+ 
 
     #guitarGrande{
       /* transform: rotate(90deg); */
@@ -544,10 +543,6 @@
     #titulos{
       margin-left: 3%;
     }
-    #tituloRecomendado{
-      display: flex;
-      flex-direction: column;
-      font-size: 1rem;    }
   
     h3{
       font-family: 'Lexend', sans-serif;
