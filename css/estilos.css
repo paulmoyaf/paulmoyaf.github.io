@@ -9,7 +9,7 @@
   .grid-layout{
     height: 100%;
       border:1px dotted rgb(7, 7, 7);
-      background-color: rgb(221, 218, 216);
+      background-color: rgb(255, 255, 255);
       display: grid;
       grid-template-areas: 'header header'
                           'nav nav'
@@ -25,20 +25,21 @@
       padding: 0;
       box-sizing: border-box;
       font-family: "Poppins", sans-serif; color: rgb(128, 62, 18);
-      font-size: 62.5%;
-      font-size: 10px;
+      /* font-size: 62.5%;
+      font-size: 10px; */
     }
     
     header{
       grid-area: header;
-      background-color: rgb(129, 129, 129);
+      background-color: rgb(80, 80, 80);
       display: flex;
-      justify-content:space-between;
-      padding-left: 10%;
+      justify-content:space-around;
+      /* padding-left: 10%;
       padding-right: 10%;
       padding-top: 0.5%;
-      padding-bottom: 0.5%;
+      padding-bottom: 0.5%; */
       color: white;
+      font-size: 65%;
     }
 
     nav{
@@ -47,9 +48,13 @@
       display: flex;
       list-style: none;
       justify-content: space-around;
-      gap: 10%;
-      width: auto;
+      /* gap: 10%; */
+      /* width: auto; */
       align-items: center;
+      border-top: 0.5px rgb(204, 204, 204);
+      border-style:groove;
+      border-left: none;
+      border-right: none;
     }
 
 
@@ -59,7 +64,7 @@
       width: 80%;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 2%;
+      /* margin-bottom: 2%; */
     }
 
     footer{
@@ -96,7 +101,7 @@
     
     .carrito{
       /* background-color: blue; */
-      padding-left: 2rem;
+      /* padding-left: 2rem; */
       width: 2.5rem;
     }
     .logoShop{
@@ -113,7 +118,7 @@
       /* gap: 1%; */
     }
     .guitarPrincipal{
-      background-color: rgb(229, 255, 170);
+      background-color: rgb(255, 255, 255);
       grid-area: guitarPrincipal;
       display: grid;
       grid-template-areas: 'guitarCompra guitarCaracteristicas'
@@ -123,14 +128,14 @@
     }
 
     #guitarCompra{
-      background-color: blueviolet;
+      /* background-color: blueviolet; */
       grid-area: guitarCompra;
       display: grid;
       justify-items: center;
       padding-top: 5%;
     }
     #guitarCaracteristicas{
-      background-color: rgb(43, 226, 165);
+      background-color: rgb(253, 253, 247);
       grid-area: guitarCaracteristicas;
       display: flex;
       flex-flow: column;
@@ -141,14 +146,14 @@
       grid-area: video;
     }
     .recomendados{
-      background-color: rgb(243, 253, 156);
+      background-color: rgb(255, 255, 255);
       grid-area: recomendados;
       display: grid;
       /* grid-auto-rows: auto; */
       text-align: center;
     }
     .relacionados{
-      background-color: rgb(255, 238, 206);
+      background-color: rgb(255, 251, 244);
       grid-area: relacionados;
     }
     .variosCompra{
@@ -161,7 +166,7 @@
       grid-area: footerInicio;
       display: grid;
       grid-template-columns: auto auto auto;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
 
     .footerFin{
@@ -169,11 +174,12 @@
       display: grid;
       grid-template-columns: auto auto auto;
       justify-content: space-around;
-
+      color: grey;
+      border-top: 1px grey double;
     }
 
     .producto{
-      background-color: azure;
+      /* background-color: azure; */
       display: grid;
       justify-items: center;
       gap: 1%;
@@ -199,7 +205,7 @@
     }
 
     #precio{
-      font-family: 'Lexend', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight:800;
       color: rgb(255, 51, 0);
       text-decoration: 4px dashed black;
@@ -342,7 +348,7 @@
       grid-area: header;
       background-color: rgb(53, 53, 53);
       display: flex;
-      justify-content:space-around;
+      justify-content:space-between;
       align-items: center;
       color: aliceblue;
       font-size: 0.8rem;
@@ -355,11 +361,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 0.1px;
+      gap: 0px;
       border-top: 0.5px rgb(165, 165, 165);
       border-style:groove;
       border-left: none;
       border-right: none;
+      padding-left: 3%;
+      padding-right: 3%;
     }
   
     main{
@@ -391,7 +399,7 @@
     .nav div.main_list ul li a {
         text-decoration: none;
         line-height: 65px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .nav div.main_list ul li a:hover {
@@ -450,10 +458,11 @@
       display: flex;
       flex-direction: column;
       text-align: center;
+      padding-top: 5%;
     }
     .relacionados{
       background-color: rgb(255, 255, 255);
-      border-top: 1px rgb(0, 0, 0) dotted;
+      border-top: 1px rgb(0, 0, 0) double;
       grid-area: relacionados;
     }
     .variosCompra{
