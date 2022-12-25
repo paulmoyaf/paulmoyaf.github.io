@@ -12,20 +12,12 @@
   background-color: aqua;
 }
 
-header{
-  background-color: rgb(168, 168, 168);
-  grid-column: 1 / span 3;
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo{
-  /* background-color: rgb(184, 248, 6); */
-  width: 100px;
-}
 
 .carrito{
-  width: 50px;
+  width: 2.5rem;
+}
+.logoShop{
+  width: 8rem;
 }
 
 #precio{
@@ -42,36 +34,56 @@ header{
   font-size: 150%;
 }
 
+header{
+  grid-area: header;
+  background-color: rgb(80, 80, 80);
+  display: flex;
+  justify-content:space-around;
+  /* padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%; */
+  color: white;
+  font-size: 65%;
+}
+
 nav{
-  grid-column: 1 / span 3;
-  background-color: rgb(255, 255, 255);
-  border-top: 0.5px rgb(165, 165, 165);
+  grid-area: nav;
+  background-color: rgb(251, 254, 255);
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  /* gap: 10%; */
+  /* width: auto; */
+  align-items: center;
+  border-top: 0.5px rgb(204, 204, 204);
   border-style:groove;
   border-left: none;
   border-right: none;
-  padding: 1%;
-  text-transform: uppercase;
-  text-align: center;
-  /* border-style:hidden; */
-
-}
-nav li {
-    margin-right: 5%;
-    display: inline;
 }
 
-nav a{
-  text-decoration:none;
-  color: rgb(105, 46, 46);
+.navlinks{
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
 }
 
-a{
-  text-decoration:none;
-  color: rgb(0, 0, 0);
+.nav div.main_list ul li {
+  /* background-color: rgb(43, 241, 3);   */
+  padding-left: 2rem;
+  list-style: none;
 }
 
+.nav div.main_list ul li a {
+    text-decoration: none;
+    /* color: #fff; */
+    line-height: 65px;
+    font-size: 1rem;
+}
 
-
+.nav div.main_list ul li a:hover {
+    color: orange;
+}
 main{
   display: grid;
   grid-row:auto ;
@@ -85,7 +97,7 @@ header, nav, main, footer, aside, .picPrincipal, article, main img{
   font-family: "Segoe UI";}
 
 main{
-  border: 10px rgb(46, 0, 253) dashed;
+  /* border: 10px rgb(46, 0, 253) dashed; */
   padding-top: 2%;
 }
 
@@ -354,58 +366,28 @@ input:hover ~ input {
 
 
 
-  footer section article{
-    width: 60%;
-display: block;
-align-items:flex-end;
-    /* display: grid; */
-    border-top: 0.5px white dotted;
-  /* align-self: flex-start; */
-  /* justify-self:left; */
-  /* background-color: rebeccapurple; */
-
-
-
-  }
-  
-  footer p {
-    color: white;
-    /* background-color: rebeccapurple; */
-
-
-  }
-
   footer{
-    /* border: 0.5px rgb(0, 194, 253) dashed; */
-    grid-column: 1 / span 2;
-    background-color: rgb(36, 36, 36);
-    color: white;
+    grid-area: footer;
+    background-color: lightgray;
+    display: grid;
+    grid-template-areas: 'footerInicio footerInicio'
+                        'footerFin footerFin';
+  }
+.footerInicio{
+  grid-area: footerInicio;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
 }
- 
-  .footerInicio{
 
-    border-top: 0.5px white double;
-    padding:2%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .footerFin{
-
-    padding: 2%;
-    border-top: 0.5px rgb(136, 136, 136) double ;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-  .footerInicio a{
-color: white;
-
-  }
-
-  .footerFin p{
-    color: rgb(136, 136, 136);
-  }
+.footerFin{
+  grid-area: footerFin;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  color: grey;
+  border-top: 1px grey double;
+}
 
   
   /* @media screen and (max-width: 1000px){

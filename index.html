@@ -1,239 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Guitar</title>
+    <!-- <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Music Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
 </head>
-    <body class="grid-layout">
+<body>
+    <header>
+        <p>paul.moyaf@gmail.com</p>
+        <p>Ondarroa - Bizkaia</p>
+    </header>
 
-        <header>
-            <p>paul.moyaf@gmail.com</p>
-            <p>Ondarroa - Bizkaia</p>
-        </header>
-
-        <nav class="nav">
-            <div class="logo">
-                <a href="index.html"><img class="logoShop" src="rsc/logoShop.png" alt=""></a>
+    <nav class="nav">
+        <div class="logo">
+            <a href="index.html"><img class="logoShop" src="rsc/logoShop.png" alt=""></a>
+        </div>
+        <div class="container">
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Guitarras</a></li>
+                    <li><a href="#">Teclados</a></li>
+                    <li><a href="#">Software</a></li>
+                </ul>
             </div>
-            <div class="container">
-                <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="#">Guitarras</a></li>
-                        <li><a href="#">Teclados</a></li>
-                        <li><a href="#">Software</a></li>
-                    </ul>
-                </div>
-                <!-- <span class="navTrigger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span> -->
-            </div>
-            <div>
-                <a href="shop.html"><img class="carrito" src="rsc/carrito.png" alt=""></a>
-            </div>
-        </nav>
-
-        <main class="secGuitar">
-
-            <section class="secMain">
-
-                <section class="guitarPrincipal">
-                    <section id="guitarCompra">
-                        <img id="guitarGrande" src="rsc/guitarra.png" alt="" width="60%">
+            <!-- <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span> -->
+        </div>
+        <div>
+            <a href="shop.html"><img class="carrito" src="rsc/carrito.png" alt=""></a>
+        </div>
+    </nav>
+    <img id="picPrincipal" src="rsc/wallGuitar2.jpg" alt="">
+    <main>
+        <!-- <section class="picPrincipal">
+            <img id="picPrincipal" src="rsc/wallGuitar2.jpg" alt="">
+        </section> -->
+        <section class="instrumentos">
+            <!-- fotos de 3 -->
+            <article>
+                <a href="guitar.html" >
+                    <img src="rsc/ibanez.png" alt="" width="40%">
+                    <section>
+                        <img id="instrumento1" src="rsc/guitarra.png" alt="">
                     </section>
-                    <section id="guitarCaracteristicas">
-                        <center><img src="rsc/fender.png" alt="" srcset="" width="70%"></center>
-                        <article>
-                            <h3>Guitarra Fender</h3>
-                            <p><strong>Marca: </strong>Fender</p>
-                            <p><strong>Modelo: </strong>A-300</p>
-                            <p><strong>Color: </strong>Blanco</p>
-                            <p><strong>Material: </strong>Madera</p>
-                            <p><strong>Prime: </strong>PRIME</p>                          
-                        </article>
-                        <article class="formEstrellas">
-                            <p id="valoracionParrafo">Valoración Producto</p>
-                            <p class="estrellas"><!--
-                                --><input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                --><label class="label" for="radio1">★</label><!--
-                                --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                --><label class="label" for="radio2">★</label><!--
-                                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                --><label class="label" for="radio3">★</label><!--
-                                --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                --><label class="label" for="radio4">★</label><!--
-                                --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                --><label class="label" for="radio5">★</label>
-                            </p>
-                        </article>
+                    <section>
+                        <p>Ibanez 500x</p>
+                        <h4>150.<sup>00</sup> €</h4>
+                    </section>
+                </a>
+            </article>
+            <article>
+                <a href="guitar.html" >
+                    <img src="rsc/yamaha.png" alt="" width="40%">
+                    <section>
+                        <img id="instrumento1" src="rsc/guitarra2.png" alt="">
+                    </section>
+                    <section>
+                        <p>Yamaha Rev-5</p>
+                        <h4>750.<sup>00</sup> €</h4>
+                    </section>
+                </a>                    
+            </article> 
+            <article>
+                <a href="guitar.html" >
+                    <img src="rsc/guitar-brand-logo-fender.jpg" alt="" width="40%">
+                    <section>
+                        <img id="instrumento1" src="rsc/guitarra3.png" alt="">
+                    </section>
+                    <section>
+                        <p>Fender Telecaster 300c</p>
+                        <h4>2100.<sup>00</sup> €</h4>
+                    </section>
+                </a>                    
+            </article>
+            <article>
+                <a href="guitar.html" >
+                    <img src="rsc/yamaha.png" alt="" width="40%">
+                    <section>
+                        <img id="instrumento1" src="rsc/teclado2.jpg" alt="">
+                    </section>
+                    <section>
+                        <p>Yamaha Rev-5</p>
+                        <h4>750.<sup>00</sup> €</h4>
+                    </section>
+                </a>                    
+            </article> 
+            <article>
+                <a href="guitar.html" >
+                    <img src="rsc/yamaha.png" alt="" width="40%">
+                    <section>
+                        <img id="instrumento1" src="rsc/teclado1.jpg" alt="">
+                    </section>
+                    <section>
+                        <p>Fender Telecaster 300c</p>
+                        <h4>2100.<sup>00</sup> €</h4>
+                    </section>
+                </a>                    
+            </article>
+            <article>
+                <a href="guitar.html" >
+                    <img src="rsc/yamaha.png" alt="" width="40%">
+                    <section>
+                        <img id="instrumento1" src="rsc/teclado3.png" alt="">
+                    </section>
+                    <section>
+                        <p>Fender Telecaster 300c</p>
+                        <h4>2100.<sup>00</sup> €</h4>
+                    </section>
+                </a>                    
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer main">
+            <section class="footerInicio">
+                <article>
+                    <h3>Productos</h3>
+                        <p><a href="">Guitarras</a></p>
+                        <p><a href="">Teclado</a></p>
+                        <p><a href="">Baterias</a></p>
+                        <p><a href="">Bajos</a></p>
+                        <p><a href="">Microfonos</a></p>
+                        <p><a href="">Software</a></p>
+                </article>
     
-                        <article>
-                            <h2 id="precio">450.<sup>99</sup> €</h2>
-                            <p>Entrega <strong>GRATIS</strong>para productos PRIME</p>
-                            <p id="stock">En Stock</p>
-                            <form class="formCantidad" action="#">
-                                <label id="labelCantidad" for="lang">Cantidad:</label>
-                                <select name="cantidad" id="lang">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                                <input type="submit" value="Añadir a la cesta"/>
-                                <button>Comprar Ahora</button>
-                            </form>
-                        </article>
-                    </section>
-                    <section id="video">
-                        <video controls src="rsc/video.mp4"></video>
-                    </section>
-                </section>
-                
-                <aside class="recomendados">
-                    <article>
-                        <h3 id="tituloRecomendado">Productos Recomendados</h3>
-                    </article>
-                    <article>
-                        <a href="guitar.html" >
-                            <img src="rsc/ibanez.png" alt="" width="40%">
-                            <section>
-                                <img id="instrumento" src="rsc/guitarra.png" alt="" >
-                            </section>
-                            <section>
-                                <p>Ibanez 500x</p>
-                                <p id="precioVarios">150.<sup>00</sup> €</p>
-                            </section>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="guitar.html" >
-                            <img src="rsc/yamaha.png" alt="" width="40%">
-                            <section>
-                                <img id="instrumento" src="rsc/guitarra2.png" alt="">
-                            </section>
-                            <section>
-                                <p>Yamaha Rev-5</p>
-                                <p id="precioVarios">750.<sup>00</sup> €</p>
-                            </section>
-                        </a>                    
-                    </article> 
-                    <article>
-                        <a href="guitar.html" >
-                            <img src="rsc/fender.png" alt="" width="40%">
-                            <section>
-                                <img id="instrumento" src="rsc/guitarra3.png" alt="">
-                            </section>
-                            <section>
-                                <p>Fender Telecaster 300c</p>
-                                <p id="precioVarios">2100.<sup>00</sup> €</p>
-                            </section>
-                        </a>                    
-                    </article>
-                </aside>
-            
-                <section class="relacionados" >
-                    <h3 id="titulos">Productos Relacionados</h3>
-                    <section class="variosCompra">
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/ibanez.png" alt="" width="40%">
-                                <img id="instrumento" src="rsc/guitarra3.png" alt="">
-                                <section>
-                                    <p>Ibanez 500x</p>
-                                    <p id="precioVarios">150.<sup>00</sup> €</p>
-                                </section>
-                            </a>
-                        </article>
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/yamaha.png" alt="" width="40%">
-                                <img id="instrumento" src="rsc/guitarra2.png" alt="">
-                                <section>
-                                    <p>Yamaha Rev-5</p>
-                                    <p id="precioVarios">750.<sup>00</sup> €</p>
-                                </section>
-                            </a>                    
-                        </article> 
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/fender.png" alt="" width="40%">
-                                <img id="instrumentoKey" src="rsc/key1.png" alt="">
-                                <section>
-                                    <p>Fender Telecaster 300c</p>
-                                    <p id="precioVarios">2100.<sup>00</sup> €</p>
-                                </section>
-                            </a>                    
-                        </article>
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/yamaha.png" alt="" width="40%">
-                                <img id="instrumentoKey" src="rsc/key2.png" alt="">
-                                <section>
-                                    <p>Yamaha Rev-5</p>
-                                    <p id="precioVarios">750.<sup>00</sup> €</p>
-                                </section>
-                            </a>                    
-                        </article> 
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/yamaha.png" alt="" width="40%">
-                                <img id="instrumentoKey" src="rsc/key3.png" alt="">
-                                <section>
-                                    <p>Fender Telecaster 300c</p>
-                                    <p id="precioVarios">2100.<sup>00</sup> €</p>
-                                </section>
-                            </a>                    
-                        </article>
-                    </section>
-                </section>
+                <article>
+                    <h3>Empresa</h3>
+                        <p><a href="">Sobre Nosotro</a></p>
+                        <p><a href="">Mision</a></p>
+                        <p><a href="">Vision</a></p>
+                        <p><a href="">Trabaja con Nosotros</a></p>
+                </article>
+    
+                <article>
+                    <h3>Atencion al Cliente</h3>
+                        <p><a href="">Contactos</a></p>
+                        <p><a href="">Ayuda</a></p>
+                        <p><a href="">Registra tu producto</a></p>
+                </article>
+    
             </section>
-        
-        </main>
+    
+            <section class="footerFin">
+                <p> - Guitar Shop - </p>
+                <p>Quito - Ecuador</p>
+                <p>&copy; 2022 Pool Production</p>
+            </section>
 
-        <footer>
-            <!-- <section class="footer main"> -->
-                <section class="footerInicio">
-                    <article>
-                        <h3>Productos</h3>
-                            <p><a href="">Guitarras</a></p>
-                            <p><a href="">Teclado</a></p>
-                            <p><a href="">Baterias</a></p>
-                            <p><a href="">Bajos</a></p>
-                            <p><a href="">Microfonos</a></p>
-                            <p><a href="">Software</a></p>
-                    </article>
-        
-                    <article>
-                        <h3>Empresa</h3>
-                            <p><a href="">Sobre Nosotro</a></p>
-                            <p><a href="">Mision</a></p>
-                            <p><a href="">Vision</a></p>
-                            <p><a href="">Trabaja con Nosotros</a></p>
-                    </article>
-        
-                    <article>
-                        <h3>Atencion al Cliente</h3>
-                            <p><a href="">Contactos</a></p>
-                            <p><a href="">Ayuda</a></p>
-                            <p><a href="">Registra tu producto</a></p>
-                    </article>
-        
-                </section>
-        
-                <section class="footerFin">
-                    <p> - Guitar Shop - </p>
-                    <p>Quito - Ecuador</p>
-                    <p>&copy; 2022 Pool Production</p>
-                </section>
+        </section>
+
+    </footer>
     
-            <!-- </section> -->
-    
-        </footer>
-        <script src="js/scripts.js"></script>
-    </body>
+</body>
 </html>
