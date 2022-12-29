@@ -34,6 +34,7 @@
       background-color: rgb(80, 80, 80);
       display: flex;
       justify-content:space-around;
+      align-items: center;
       /* padding-left: 10%;
       padding-right: 10%;
       padding-top: 0.5%;
@@ -102,10 +103,10 @@
     .carrito{
       /* background-color: blue; */
       /* padding-left: 2rem; */
-      width: 2.5rem;
+      width: 1.5rem;
     }
     .logoShop{
-      width: 8rem;
+      width: 5rem;
     }
 
     .secMain{
@@ -319,7 +320,7 @@
 /* ------------------------------------------------------------------------------------------------- */
 
 
-@media (max-width:768px) {
+@media (max-width:786px) {
 
   body{
     margin: 0;
@@ -348,7 +349,7 @@
       grid-area: header;
       background-color: rgb(53, 53, 53);
       display: flex;
-      justify-content:space-between;
+      justify-content:space-around;
       align-items: center;
       color: aliceblue;
       font-size: 0.8rem;
@@ -359,20 +360,20 @@
       grid-area: nav;
       background-color: rgb(255, 255, 255);
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       gap: 0px;
       border-top: 0.5px rgb(165, 165, 165);
       border-style:groove;
       border-left: none;
       border-right: none;
-      padding-left: 3%;
-      padding-right: 3%;
+      /* padding-left: 3%;
+      padding-right: 3%; */
     }
   
     main{
       grid-area: main;
-      background-color: bisque;
+
       width: auto;
       font-size: 1.5rem;
     }
@@ -410,21 +411,28 @@
       width: 2rem;
     }
     .logoShop{
-      width: 7rem;
+      width: 5rem;
       /* padding-left: 15%; */
     }
 
     .secMain{
+
       display: flex;
-      flex-direction: column;              
+      flex-direction: column;
+      
     }
     .guitarPrincipal{
-      background-color: rgb(255, 255, 255);
+
       grid-area: guitarPrincipal;
       display: grid;
       grid-template-areas:  'guitarCompra guitarCaracteristicas'
                             'video video';
       align-items: flex-start;
+      justify-items: center;
+      /* background-color: rgb(255, 0, 0); */
+      gap: 0px;
+      
+
     }
   
     #guitarCompra{
@@ -433,13 +441,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
 
-    video{
-      padding-top: 3%;
-      width: 100%;
     }
 
     #guitarCaracteristicas{
@@ -447,10 +449,13 @@
       grid-area: guitarCaracteristicas;
       display: flex;
       flex-flow: column;
-      padding: 5%;
+      /* width: 100%; */
+      /* padding: 5%; */
     }
     #video{
       grid-area: video;
+      /* width: 80%; */
+      padding-top: 3%;
     }
     .recomendados{
       background-color: rgb(255, 255, 255);
@@ -501,12 +506,13 @@
     /* display: inline-flex; */
     flex-wrap: wrap;
     gap: 10px;
+    padding-bottom: 5%;
   }
  
 
     #guitarGrande{
       /* transform: rotate(90deg); */
-      width: 100%;
+      width: 80%;
       /* margin-top: -80px; */
       padding-top: 20%;
       /* height: 200%; */
@@ -526,7 +532,7 @@
       font-weight:800;
       color: orangered;
       text-decoration: 4px dashed black;
-      font-size: 250%;
+      font-size: 220%;
     }
   
     #precioVarios{
@@ -543,10 +549,7 @@
       color: orangered;
     }
     
-    #labelCantidad{
-      text-decoration: none;
-    }
- 
+
     #stock{
       color: rgb(1, 109, 28);
       text-decoration: 4px dashed black;
@@ -581,11 +584,12 @@
       color: antiquewhite;
     }
    /***************** seccion para los botonos de cantidades */
+
   button:hover,
   button:hover ~ button {
     background-color: orange;
     color: rgb(255, 255, 255);
-  
+    
   }
   
   input:hover,
@@ -593,6 +597,8 @@
     background-color: orangered;
     color: rgb(255, 255, 255);
   }
+
+
   
   /***************************** seccion para las estrellas */
   label:hover,
@@ -612,12 +618,7 @@
     color: grey;
     /* width: 50px; */
   }
-  
-  #valoracionParrafo{
-    margin-right: 3%;
-    color: chocolate;
-  }
-  
+   
   .estrellas {
     direction: rtl;
     unicode-bidi: bidi-override;
@@ -625,8 +626,10 @@
   
   .formEstrellas{
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-direction:column;
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: right; */
   }
   
   .formEstrellas label {
