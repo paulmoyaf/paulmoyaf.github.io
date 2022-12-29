@@ -17,7 +17,7 @@
                           'footer footer'
                           ;
 
-      grid-template-rows: auto auto auto auto;
+      grid-template-rows: 50px auto auto auto;
     }
 
     body{
@@ -37,7 +37,7 @@
       align-items: center;
       /* padding-left: 10%;
       padding-right: 10%;
-      padding-top: 0.5%;
+
       padding-bottom: 0.5%; */
       color: white;
       font-size: 65%;
@@ -61,7 +61,7 @@
 
     main{
       grid-area: main;
-      background-color: bisque;
+      /* background-color: bisque; */
       width: 80%;
       margin-left: auto;
       margin-right: auto;
@@ -103,7 +103,7 @@
     .carrito{
       /* background-color: blue; */
       /* padding-left: 2rem; */
-      width: 1.5rem;
+      width: 2rem;
     }
     .logoShop{
       width: 5rem;
@@ -114,18 +114,20 @@
       grid-template-areas: 'guitarPrincipal recomendados'
                           'relacionados relacionados';
       grid-template-columns: 65% 35%;
-      grid-template-rows: auto 30%;
+      /* grid-template-rows: auto auto; */
 
       /* gap: 1%; */
     }
     .guitarPrincipal{
-      background-color: rgb(255, 255, 255);
+      /* background-color: rgb(255, 6, 6); */
       grid-area: guitarPrincipal;
       display: grid;
       grid-template-areas: 'guitarCompra guitarCaracteristicas'
                           'video video';
       grid-template-columns: 50% auto;
-      gap: 3%;
+      grid-template-rows: auto 80%;
+      gap: 2%;
+      justify-items: center;
     }
 
     #guitarCompra{
@@ -140,11 +142,13 @@
       grid-area: guitarCaracteristicas;
       display: flex;
       flex-flow: column;
-      padding-top: 5%;
-      padding-left: 5%;
+      padding: 5%;
+      /* padding-top: 5%;
+      padding-left: 5%; */
     }
     #video{
       grid-area: video;
+      width: 90%;
     }
     .recomendados{
       background-color: rgb(255, 255, 255);
@@ -384,7 +388,7 @@
       display: grid;
       grid-template-areas: 'footerInicio footerInicio'
                            'footerFin footerFin';
-      font-size: 1.5rem;
+      font-size: 1rem;
       padding-left: 2%;
       padding-right: 2%;
     }
