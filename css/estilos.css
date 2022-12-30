@@ -404,7 +404,7 @@
     .nav div.main_list ul li a {
         text-decoration: none;
         line-height: 65px;
-        font-size: .65rem;
+        font-size: 1rem;
     }
     
     .nav div.main_list ul li a:hover {
