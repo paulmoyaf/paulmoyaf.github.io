@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilosIndex.css">
 </head>
-<body>
+<body class="grid-layout">
     <header>
         <p>paul.moyaf@gmail.com</p>
-        <p>Ondarroa - Bizkaia</p>
+        <a href="shop.html"><img class="carrito" src="rsc/carro1.png" alt=""></a>
     </header>
 
     <nav class="nav">
         <div class="logo">
-            <a href="index.html"><img class="logoShop" src="rsc/logoShop.png" alt=""></a>
+            <a href="index.html"><img class="logoShop" src="rsc/PaulLogo1.png" alt=""></a>
         </div>
         <div class="container">
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="#">Guitarras</a></li>
-                    <li><a href="#">Teclados</a></li>
+                    <li><a href="#">Productos</a></li>
                     <li><a href="#">Software</a></li>
                 </ul>
             </div>
@@ -32,95 +31,89 @@
                 <i></i>
             </span> -->
         </div>
-        <div>
-            <a href="shop.html"><img class="carrito" src="rsc/carrito.png" alt=""></a>
-        </div>
     </nav>
-    <img id="picPrincipal" src="rsc/wallGuitar2.jpg" alt="">
-    <main>
-        <!-- <section class="picPrincipal">
+    <main class="mainIndex">
+        <section class="picPrincipal">
             <img id="picPrincipal" src="rsc/wallGuitar2.jpg" alt="">
-        </section> -->
-        <section class="instrumentos">
-            <!-- fotos de 3 -->
+        </section>
+        <section class="instrumentosGrid">
             <article>
                 <a href="guitar.html" >
-                    <img src="rsc/ibanez.png" alt="" width="40%">
+                    <img id="marca" src="rsc/ibanez.png" alt="">
                     <section>
                         <img id="instrumento1" src="rsc/guitarra.png" alt="">
                     </section>
                     <section>
                         <p>Ibanez 500x</p>
-                        <h4>150.<sup>00</sup> €</h4>
+                        <p id="precioVarios">150.<sup>00</sup> €</p>
                     </section>
                 </a>
             </article>
             <article>
                 <a href="guitar.html" >
-                    <img src="rsc/yamaha.png" alt="" width="40%">
+                    <img id="marca" src="rsc/yamaha.png" alt="">
                     <section>
                         <img id="instrumento1" src="rsc/guitarra2.png" alt="">
                     </section>
                     <section>
                         <p>Yamaha Rev-5</p>
-                        <h4>750.<sup>00</sup> €</h4>
+                        <p id="precioVarios">750.<sup>00</sup> €</p>
                     </section>
                 </a>                    
             </article> 
             <article>
                 <a href="guitar.html" >
-                    <img src="rsc/guitar-brand-logo-fender.jpg" alt="" width="40%">
+                    <img id="marca" src="rsc/fender.png" alt="">
                     <section>
                         <img id="instrumento1" src="rsc/guitarra3.png" alt="">
                     </section>
                     <section>
                         <p>Fender Telecaster 300c</p>
-                        <h4>2100.<sup>00</sup> €</h4>
+                        <p id="precioVarios">2100.<sup>00</sup> €</p>
                     </section>
                 </a>                    
             </article>
             <article>
                 <a href="guitar.html" >
-                    <img src="rsc/yamaha.png" alt="" width="40%">
+                    <img id="marca" src="rsc/yamaha.png" alt="">
                     <section>
-                        <img id="instrumento1" src="rsc/teclado2.jpg" alt="">
+                        <img id="instrumentoKey" src="rsc/key1.png" alt="">
                     </section>
                     <section>
                         <p>Yamaha Rev-5</p>
-                        <h4>750.<sup>00</sup> €</h4>
+                        <p id="precioVarios">750.<sup>00</sup> €</p>
                     </section>
                 </a>                    
             </article> 
             <article>
                 <a href="guitar.html" >
-                    <img src="rsc/yamaha.png" alt="" width="40%">
+                    <img id="marca" src="rsc/yamaha.png" alt="">
                     <section>
-                        <img id="instrumento1" src="rsc/teclado1.jpg" alt="">
+                        <img id="instrumentoKey" src="rsc/key2.png" alt="">
                     </section>
                     <section>
                         <p>Fender Telecaster 300c</p>
-                        <h4>2100.<sup>00</sup> €</h4>
+                        <p id="precioVarios">2100.<sup>00</sup> €</p>
                     </section>
                 </a>                    
             </article>
             <article>
                 <a href="guitar.html" >
-                    <img src="rsc/yamaha.png" alt="" width="40%">
+                    <img id="marca" src="rsc/yamaha.png" alt="">
                     <section>
-                        <img id="instrumento1" src="rsc/teclado3.png" alt="">
+                        <img id="instrumentoKey" src="rsc/key3.png" alt="">
                     </section>
                     <section>
                         <p>Fender Telecaster 300c</p>
-                        <h4>2100.<sup>00</sup> €</h4>
+                        <p id="precioVarios">2100.<sup>00</sup> €</p>
                     </section>
                 </a>                    
             </article>
         </section>
-
     </main>
 
     <footer>
-        <section class="footer main">
+        <!-- <section class="footer main"> -->
             <section class="footerInicio">
                 <article>
                     <h3>Productos</h3>
@@ -134,7 +127,7 @@
     
                 <article>
                     <h3>Empresa</h3>
-                        <p><a href="">Sobre Nosotro</a></p>
+                        <p><a href="">Sobre Nosotros</a></p>
                         <p><a href="">Mision</a></p>
                         <p><a href="">Vision</a></p>
                         <p><a href="">Trabaja con Nosotros</a></p>
@@ -150,12 +143,12 @@
             </section>
     
             <section class="footerFin">
-                <p> - Guitar Shop - </p>
-                <p>Quito - Ecuador</p>
                 <p>&copy; 2022 Pool Production</p>
+                <p> * Guitar Shop * </p>
+                <p>Quito - Ecuador</p>
             </section>
 
-        </section>
+        <!-- </section> -->
 
     </footer>
     

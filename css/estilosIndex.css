@@ -61,11 +61,7 @@
 
     main{
       grid-area: main;
-      /* background-color: bisque; */
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      /* margin-bottom: 2%; */
+      /* height: 100%; */
     }
 
     footer{
@@ -109,61 +105,51 @@
       width: 5rem;
     }
 
-    .secMain{
+
+
+    .mainIndex{
       display: grid;
-      grid-template-areas: 'guitarPrincipal recomendados'
-                          'relacionados relacionados';
-      grid-template-columns: 65% 35%;
+      grid-template-areas: 'picPrincipal'
+                          'instrumentosGrid';
+      grid-template-rows: auto auto;
       font-size: 1.2rem;
     }
-    .guitarPrincipal{
-      /* background-color: rgb(255, 6, 6); */
-      grid-area: guitarPrincipal;
-      display: grid;
-      grid-template-areas: 'guitarCompra guitarCaracteristicas'
-                          'video video';
-      grid-template-columns: 50% auto;
-      grid-template-rows: auto 80%;
-      gap: 2%;
-      justify-items: center;
+
+    #picPrincipal{
+      grid-area: picPrincipal;
+      width: 100%;
+      
     }
 
-    #guitarCompra{
-      /* background-color: blueviolet; */
-      grid-area: guitarCompra;
+
+    .instrumentosGrid{
+
+      grid-area: instrumentosGrid;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
       display: grid;
-      justify-items: center;
+      grid-template-columns: auto auto auto;
+      text-align: center;
+      /* margin-top: -200px; */
+      /* gap: %; */
+      /* background-color: #2196F3; */
+
+    }
+
+    #instrumento1{
+      padding-top: 5%;
+    width: 40%;
+    }
+
+    #marca{
+      width: 25%;
       padding-top: 5%;
     }
-    #guitarCaracteristicas{
-      background-color: rgb(253, 253, 247);
-      grid-area: guitarCaracteristicas;
-      display: flex;
-      flex-flow: column;
-      padding: 5%;
-      /* padding-top: 5%;
-      padding-left: 5%; */
-    }
-    #video{
-      grid-area: video;
-      width: 90%;
-    }
-    .recomendados{
-      background-color: rgb(255, 255, 255);
-      grid-area: recomendados;
-      display: grid;
-      /* grid-auto-rows: auto; */
-      text-align: center;
-    }
-    .relacionados{
-      /* background-color: rgb(255, 251, 244); */
-      border-top: 1px black double;
-      grid-area: relacionados;
-    }
-    .variosCompra{
-      display: grid;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-      text-align: center;
+
+    #instrumentoKey{
+      margin-top: 4%;
+      width: 65%;
     }
 
     .footerInicio{
@@ -182,40 +168,9 @@
       border-top: 1px grey double;
     }
 
-    .producto{
-      /* background-color: azure; */
-      display: grid;
-      justify-items: center;
-      gap: 1%;
-    }
 
-    .formCantidad{
-      display: flex;
-      /* display: inline-flex; */
-      flex-wrap: wrap;
-      gap: 10px;
-      
-    }
-    #marca{
-      width: 20%;
-    }
-    #instrumento{
-      margin-top: 4%;
-      width: 35%;
-    }
 
-    #instrumentoKey{
-      margin-top: 4%;
-      width: 80%;
-    }
 
-    #precio{
-      font-family: 'Poppins', sans-serif;
-      font-weight:800;
-      color: rgb(255, 51, 0);
-      text-decoration: 4px dashed black;
-      font-size: 250%;
-    }
 
     #precioVarios{
       font-family: 'Lexend', sans-serif;
@@ -231,9 +186,6 @@
       color: rgb(255, 51, 0);
     }
     
-    video{
-      width: 100%;
-    }
     #stock{
       color: rgb(1, 109, 28);
       text-decoration: 4px dashed black;
@@ -268,59 +220,6 @@
     nav:hover ~ nav{
       color: antiquewhite;
     }
-  /***************** seccion para los botonos de cantidades */
-  button:hover,
-  button:hover ~ button {
-    background-color: orange;
-    color: rgb(255, 255, 255);
-    
-
-  }
-
-  input:hover,
-  input:hover ~ input {
-    background-color: orangered;
-    color: rgb(255, 255, 255);
-  }
-
-  /***************************** seccion para las estrellas */
-  label:hover,
-  label:hover ~ label {
-    color: orange;
-  }
-
-  input[type="radio"]:checked ~ label {
-    color: orange;
-  }
-
-  input[type="radio"] {
-    display: none;
-  }
-
-  .label {
-    color: grey;
-    /* width: 50px; */
-  }
-
-  #valoracionParrafo{
-    margin-right: 3%;
-    color: chocolate;
-  }
-
-  .estrellas {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-  }
-
-  .formEstrellas{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .formEstrellas label {
-    font-size: 150%;
-  }
 
 /* ------------------------------------------------------------------------------------------------- */
 
@@ -420,12 +319,50 @@
       /* padding-left: 15%; */
     }
 
-    .secMain{
+    .mainIndex{
+      display: grid;
+      grid-template-areas: 'picPrincipal'
+                          'instrumentosGrid';
+      grid-template-rows: auto auto;
+      font-size: 1.2rem;
+    }
 
-      display: flex;
-      flex-direction: column;
+    #picPrincipal{
+      grid-area: picPrincipal;
+      width: 100%;
       
     }
+
+    .instrumentosGrid{
+
+      grid-area: instrumentosGrid;
+      display: grid;
+      grid-template-columns: auto;
+      text-align: center;
+      /* margin-top: -200px; */
+      /* gap: %; */
+      /* background-color: #2196F3; */
+
+    }
+
+    #instrumento1{
+      padding-top: 5%;
+    width: 40%;
+    }
+
+    #marca{
+      width: 25%;
+      padding-top: 5%;
+    }
+
+    #instrumentoKey{
+      margin-top: 4%;
+      width: 65%;
+    }
+
+
+
+
     .guitarPrincipal{
 
       grid-area: guitarPrincipal;
