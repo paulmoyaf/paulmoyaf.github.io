@@ -29,28 +29,21 @@
       font-size: 10px; */
     }
     
-    header{
+    .header{
       grid-area: header;
-      background-color: rgb(80, 80, 80);
+      background-color: rgb(53, 53, 53);
       display: flex;
       justify-content:space-around;
       align-items: center;
-      /* padding-left: 10%;
-      padding-right: 10%;
-
-      padding-bottom: 0.5%; */
       color: white;
       font-size: 65%;
     }
 
-    nav{
+    .nav{
       grid-area: nav;
-      background-color: rgb(251, 254, 255);
+      background-color: rgb(255, 255, 255);
       display: flex;
-      list-style: none;
       justify-content: space-around;
-      /* gap: 10%; */
-      /* width: auto; */
       align-items: center;
       border-top: 0.5px rgb(204, 204, 204);
       border-style:groove;
@@ -58,17 +51,28 @@
       border-right: none;
     }
 
-
-    main{
+    .mainIndex{
       grid-area: main;
-      /* background-color: bisque; */
+      display: grid;
+      grid-template-areas: 'picPrincipal'
+                          'instrumentosGrid';
+      grid-template-rows: auto auto;
+      font-size: 1.2rem;
+    }
+    
+    .secMain{
+      grid-area: main;
       width: 80%;
       margin-left: auto;
       margin-right: auto;
-      /* margin-bottom: 2%; */
+      display: grid;
+      grid-template-areas: 'guitarPrincipal recomendados'
+                          'relacionados relacionados';
+      grid-template-columns: 65% 35%;
+      font-size: 1.2rem;
     }
 
-    footer{
+    .footer{
       grid-area: footer;
       background-color: lightgray;
       display: grid;
@@ -80,13 +84,15 @@
     .navlinks{
       /* background-color: aqua; */
       display: flex;
-      align-items: center;
+      /* align-items: center; */
     }
     
     .nav div.main_list ul li {
       /* background-color: rgb(43, 241, 3);   */
-      padding-left: 2rem;
+      /* padding-left: 2rem; */
       list-style: none;
+      width: 120px;
+      text-align: center;
     }
     
     .nav div.main_list ul li a {
@@ -96,8 +102,12 @@
         font-size: 1.2rem;
     }
     
+    /* .nav div.main_list ul li:hover {
+      background-color: rgb(175, 175, 153);  
+    } */
+    
     .nav div.main_list ul li a:hover {
-        color: orange;
+        color: chocolate;
     }
     
     .carrito{
@@ -107,15 +117,124 @@
     }
     .logoShop{
       width: 5rem;
+      /* display: none; */
     }
 
-    .secMain{
-      display: grid;
-      grid-template-areas: 'guitarPrincipal recomendados'
-                          'relacionados relacionados';
-      grid-template-columns: 65% 35%;
-      font-size: 1.2rem;
+
+/* *******************index */
+    #picPrincipal{
+      grid-area: picPrincipal;
+      width: 100%;
+      
     }
+
+
+    .instrumentosGrid{
+
+      grid-area: instrumentosGrid;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      text-align: center;
+      /* margin-top: -200px; */
+      /* gap: %; */
+      /* background-color: #2196F3; */
+
+    }
+    #instrumento1{
+      padding-top: 5%;
+    width: 40%;
+    }
+
+    #marcaInd{
+      width: 25%;
+      padding-top: 5%;
+    }
+
+    #instrumentoKey{
+      margin-top: 4%;
+      width: 65%;
+    }
+
+
+/* **********************mainCAR****************************** */
+
+#grid-layoutShop{
+  background-color: rgb(228, 228, 228);
+}
+.mainCar{
+  background-color: rgb(255, 251, 244);
+  grid-area: main;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-areas: 'shopCar asideRecomendados'
+                      'relacionadosCar relacionadosCar';
+  grid-template-columns: 55% 35%;
+  font-size: 1.0rem;
+  justify-content: center;
+}
+
+.shopCar{
+  grid-area: shopCar;
+  border: 1px black double;
+  border-radius: 5px;
+  background-color: white;
+  height:max-content;
+  margin: 5%;
+  padding: 5%;
+}
+.asideRecomendados{
+  grid-area: asideRecomendados;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  margin: 7%;
+}
+
+.totalCompra, .recomendadosCar{
+  background-color: rgb(255, 255, 255);
+  border: 1px black double;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5%;
+}
+
+.relacionadosCar{
+  background-color: rgb(255, 251, 244);
+  border-top: 1px black double;
+  grid-area: relacionadosCar;
+}
+
+
+#guitarGrande{
+  width: 60%;
+}
+
+#prodCompra{
+  width: 20%;
+}
+
+.itemCompra{
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  gap: 5%;
+  border-top: 1px double grey;
+}
+
+.btComprar{
+  background-color: orangered;
+  font-size: large;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+} 
+/* ************************************guitaar */
     .guitarPrincipal{
       /* background-color: rgb(255, 6, 6); */
       grid-area: guitarPrincipal;
@@ -196,6 +315,7 @@
       gap: 10px;
       
     }
+  
     #marca{
       width: 20%;
     }
@@ -269,26 +389,28 @@
       color: antiquewhite;
     }
   /***************** seccion para los botonos de cantidades */
-  button:hover,
-  button:hover ~ button {
-    background-color: orange;
-    color: rgb(255, 255, 255);
-    
-
-  }
-
-  input:hover,
-  input:hover ~ input {
+ 
+  input[type="submit"]:hover {
     background-color: orangered;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 8px;
   }
 
+   input[type="button"]:hover {
+    background-color: orange;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+  }
+
+  #btBuyNow, #btAnadirCesta{
+    padding: 5px 5px;
+  }
   /***************************** seccion para las estrellas */
-  label:hover,
-  label:hover ~ label {
+
+  input[type="radio"]:hover {
     color: orange;
   }
-
   input[type="radio"]:checked ~ label {
     color: orange;
   }
@@ -297,7 +419,8 @@
     display: none;
   }
 
-  .label {
+  /* label estrellas */
+  .label { 
     color: grey;
     /* width: 50px; */
   }
@@ -325,7 +448,7 @@
 /* ------------------------------------------------------------------------------------------------- */
 
 
-@media (max-width:786px) {
+@media (max-width:880px) {
 
   body{
     margin: 0;
@@ -352,7 +475,7 @@
       /* width: 100%; */
     }
   
-    header{
+    .header{
       grid-area: header;
       background-color: rgb(53, 53, 53);
       display: flex;
@@ -363,11 +486,11 @@
       width: auto;
     }
   
-    nav{
+    .nav{
       grid-area: nav;
       background-color: rgb(255, 255, 255);
       display: flex;
-      justify-content:flex-start;
+      justify-content:space-around;
       align-items: center;
       border-top: 0.5px rgb(165, 165, 165);
       border-style:groove;
@@ -409,7 +532,7 @@
     }
     
     .nav div.main_list ul li a:hover {
-        color: orange;
+        color: chocolate;
     }
     
     .carrito{
@@ -426,6 +549,54 @@
       flex-direction: column;
       
     }
+
+    .mainIndex{
+      display: grid;
+      grid-template-areas: 'picPrincipal'
+                          'instrumentosGrid';
+      grid-template-rows: auto auto;
+      font-size: 1.2rem;
+    }
+
+/* ******************************index */
+
+#picPrincipal{
+  grid-area: picPrincipal;
+  width: 100%;
+  
+}
+
+.instrumentosGrid{
+
+  grid-area: instrumentosGrid;
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  /* margin-top: -200px; */
+  /* gap: %; */
+  /* background-color: #2196F3; */
+
+}
+
+#instrumento1{
+  padding-top: 5%;
+width: 40%;
+}
+
+#marcaInd{
+  width: 25%;
+  padding-top: 5%;
+}
+
+#instrumentoKey{
+  margin-top: 4%;
+  width: 65%;
+}
+
+/* *********************************************** guitar */
+
+
+
     .guitarPrincipal{
 
       grid-area: guitarPrincipal;
@@ -590,31 +761,26 @@
     }
    /***************** seccion para los botonos de cantidades */
 
-  button:hover,
-  button:hover ~ button {
+   input[type="submit"]:hover {
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+   input[type="button"]:hover {
     background-color: orange;
     color: rgb(255, 255, 255);
     
   }
   
-  input:hover,
-  input:hover ~ input {
-    background-color: orangered;
-    color: rgb(255, 255, 255);
-  }
-
-
-  
   /***************************** seccion para las estrellas */
-  label:hover,
-  label:hover ~ label {
+  input[type="radio"]:hover {
     color: orange;
   }
-  
   input[type="radio"]:checked ~ label {
     color: orange;
   }
-  
+
   input[type="radio"] {
     display: none;
   }

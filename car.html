@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-    <body class="grid-layout">
+    <body class="grid-layout" id="grid-layoutShop">
 
         <header class="header">
             <p>paul.moyaf@gmail.com</p>
@@ -35,105 +35,108 @@
             </div>
         </nav>
 
-        <main class="secGuitar">
+        <main class="mainCar">
 
-            <section class="secMain">
 
-                <section class="guitarPrincipal">
-                    <section id="guitarCompra">
-                        <img id="guitarGrande" src="rsc/guitarra.png" alt="" width="60%">
-                    </section>
-                    <section id="guitarCaracteristicas">
-                        <center><img src="rsc/fender.png" alt="" srcset="" width="70%"></center>
-                        <article>
-                            <h3>Guitarra Fender</h3>
-                            <p><strong>Marca: </strong>Fender</p>
-                            <p><strong>Modelo: </strong>A-300</p>
-                            <p><strong>Color: </strong>Blanco</p>
-                            <p><strong>Material: </strong>Madera</p>
-                            <p><strong>Prime: </strong>PRIME</p>                          
-                        </article>
-                        <article class="formEstrellas">
-                            <p id="valoracionParrafo">Valoración Producto:</p>
-                            <p class="estrellas">
-                                   <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                --><label class="label" for="radio1">★</label><!--
-                                --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                --><label class="label" for="radio2">★</label><!--
-                                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
-                                --><label class="label" for="radio3">★</label><!--
-                                --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                --><label class="label" for="radio4">★</label><!--
-                                --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                --><label class="label" for="radio5">★</label>
-                            </p>
-                        </article>
-    
-                        <article>
-                            <h2 id="precio">450.<sup>99</sup> €</h2>
-                            <p>Entrega <strong>GRATIS</strong>para productos PRIME</p>
-                            <p id="stock">En Stock</p>
-                            <form class="formCantidad" action="#">
-                                <label id="labelCantidad" for="lang">Cantidad:</label>
-                                <select name="cantidad" id="lang">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                                <input id="btAnadirCesta" type="submit" value="Añadir a la cesta"/>
-                                <a href="car.html"><input id="btBuyNow" type="button" value="Comprar Ahora"></a>
-                            </form>
-                        </article>
-                    </section>
-                    <section id="video">
-                        <video controls src="rsc/video.mp4"></video>
-                    </section>
+
+                <section class="shopCar">
+                    <article>
+                        <h3 id="carroTitulo">Carro de la Compra</h3>
+                    </article>
+                    <article class="itemCompra">
+                        <img id="prodCompra" src="rsc/guitarra.png" alt="">
+                        <section id="guitarCaracteristicas">
+                            <article>
+                                <h3>Guitarra Fender</h3>
+                                <p>Fender, A-300, Blanco, Madera</p>                       
+                                <h3>450.99€</h3>
+                                <form class="formCantidad" action="#">
+                                    <label id="labelCantidad" for="lang">Cantidad:</label>
+                                    <select name="cantidad" id="lang">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <input type="submit" value="Eliminar"/>
+                                </form>
+                            </article>
+                        </section>
+                    </article>
+
+                    <article class="itemCompra">
+                        <img id="prodCompra" src="rsc/guitarra2.png" alt="">
+                        <section id="guitarCaracteristicas">
+                            <article>
+                                <h3>Guitarra Fender</h3>
+                                <p>Fender, A-300, Blanco, Madera</p>                       
+                                <h3>750.00€</h3>
+                                <form class="formCantidad" action="#">
+                                    <label id="labelCantidad" for="lang">Cantidad:</label>
+                                    <select name="cantidad" id="lang">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <input type="submit" value="Eliminar"/>
+                                </form>
+                            </article>
+                        </section>
+                    </article>
                 </section>
                 
-                <aside class="recomendados">
-                    <article>
-                        <h3 id="tituloRecomendado">Productos Recomendados</h3>
-                    </article>
-                    <article>
-                        <a href="guitar.html" >
-                            <img src="rsc/ibanez.png" alt="" width="40%">
-                            <section>
-                                <img id="instrumento" src="rsc/guitarra.png" alt="" >
-                            </section>
-                            <section>
-                                <p>Ibanez 500x</p>
-                                <p id="precioVarios">150.<sup>00</sup> €</p>
-                            </section>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="guitar.html" >
-                            <img src="rsc/yamaha.png" alt="" width="40%">
-                            <section>
-                                <img id="instrumento" src="rsc/guitarra2.png" alt="">
-                            </section>
-                            <section>
-                                <p>Yamaha Rev-5</p>
-                                <p id="precioVarios">750.<sup>00</sup> €</p>
-                            </section>
-                        </a>                    
-                    </article> 
-                    <article>
-                        <a href="guitar.html" >
-                            <img src="rsc/fender.png" alt="" width="40%">
-                            <section>
-                                <img id="instrumento" src="rsc/guitarra3.png" alt="">
-                            </section>
-                            <section>
-                                <p>Fender Telecaster 300c</p>
-                                <p id="precioVarios">2100.<sup>00</sup> €</p>
-                            </section>
-                        </a>                    
-                    </article>
+                <aside class="asideRecomendados">
+                    <section class="totalCompra">
+                            <p>Total Compra: <strong id="precioShop">1200.99€</strong></p>
+                            <button class="btComprar">Proceder a la compra</button>
+                    </section>
+
+                    <section class="recomendadosCar">
+                        <article>
+                            <h3 id="tituloRecomendado">Productos Recomendados</h3>
+                        </article>
+                        <article>
+                            <a href="guitar.html" >
+                                <img src="rsc/ibanez.png" alt="" width="40%">
+                                <section>
+                                    <img id="instrumento" src="rsc/guitarra.png" alt="" >
+                                </section>
+                                <section>
+                                    <p>Ibanez 500x</p>
+                                    <p id="precioVarios">150.<sup>00</sup> €</p>
+                                </section>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="guitar.html" >
+                                <img src="rsc/yamaha.png" alt="" width="40%">
+                                <section>
+                                    <img id="instrumento" src="rsc/guitarra2.png" alt="">
+                                </section>
+                                <section>
+                                    <p>Yamaha Rev-5</p>
+                                    <p id="precioVarios">750.<sup>00</sup> €</p>
+                                </section>
+                            </a>                    
+                        </article> 
+                        <article>
+                            <a href="guitar.html" >
+                                <img src="rsc/fender.png" alt="" width="40%">
+                                <section>
+                                    <img id="instrumento" src="rsc/guitarra3.png" alt="">
+                                </section>
+                                <section>
+                                    <p>Fender Telecaster 300c</p>
+                                    <p id="precioVarios">2100.<sup>00</sup> €</p>
+                                </section>
+                            </a>                    
+                        </article>
+                    </section>
+
                 </aside>
             
-                <section class="relacionados" >
+                <section class="relacionadosCar" >
                     <h3 id="titulos">Productos Relacionados</h3>
                     <section class="variosCompra">
                         <article>
@@ -188,7 +191,7 @@
                         </article>
                     </section>
                 </section>
-            </section>
+
         
         </main>
 

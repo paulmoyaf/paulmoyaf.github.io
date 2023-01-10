@@ -10,12 +10,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>Music Store</title>
-        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
     </head>
     <body>
         <header>
-            <a href="index.html"><img class="logo" src="rsc/logo2.jpg" alt=""></a>
-            <a href="shop.html"><img class="carrito" src="rsc/carrito.png" alt="" ></a>
         </header>
 
         <nav>
@@ -28,29 +26,32 @@
         </nav>
         <main>
             <section>
-                <article>
-                    <img src="rsc/guitar2.jpg" alt="" sizes="" srcset="">
-                </article>
+                <form action="">
+                    <p>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Escriba Nombre...">
+                    </p>
+                    <p>
+                        <label for="descripcion">Descripcion</label>
+                        <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+                    </p>
+
+                        <input type="radio" name="genero" value="hombre"> Hombre<br/>
+                        <input type="radio" name="genero" value="mujer"> Mujer<br/>
+
+                    <p>
+                        <input type="date" name="fecha" id="">
+                        <input type="button" value="">Presione<br/>
+                    </p>
+
+                    <select name="genero2" id="">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                    <input type="submit" value="Enviar Formulario"/>
+                
+                </form>
             </section>
-            
-            <aside>
-                <article>
-                    <a href="guitar.html" ><img src="rsc/guitar2.jpg" alt=""><p>Guitarra 1</p></a>
-                </article>
-                <article>
-                    <a href="" ><img src="rsc/guitar3.jpg" alt=""><p>Guitarra 2</p></a>
-                </article> 
-                <article>
-                    <a href="" ><img src="rsc/guitar3.jpg" alt=""><p>Guitarra 3</p></a>
-                </article>
-                <article>
-                    <a href="" ><img src="rsc/teclado1.jpg" alt=""><p>Teclado 1</p></a>
-                </article>
-                <article>
-                    <a href="" ><img src="rsc/teclado2.jpg" alt=""><p>Teclado 2</p></a>
-                </article>
-    
-            </aside>
         </main>
     
 
