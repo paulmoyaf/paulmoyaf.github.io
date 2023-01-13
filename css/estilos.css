@@ -701,7 +701,7 @@ width: 40%;
 .asideRecomendados{
   grid-area: asideRecomendados;
   text-align: center;
-  display: flex;
+  display: grid;
   flex-direction: column;
   /* gap: 10%; */
   /* margin: 7%; */
@@ -713,7 +713,6 @@ width: 40%;
   border-radius: 5px;
   text-align: center;
   padding: 3%;
-
 }
 
 .totalCompra{
@@ -723,13 +722,17 @@ width: 40%;
   font-size: 1.3rem;
 }
 .relacionadosCar{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgb(255, 251, 244);
   border-top: 1px black double;
   grid-area: relacionadosCar;
+  font-size: 0.7em;
 }
 
 #prodCompra{
-  width: 7rem;
+  width: 9rem;
 }
 
 .prodCompraClass{
