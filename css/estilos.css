@@ -178,7 +178,7 @@
   justify-content: center;
 }
 
-.shopCar{
+.shopCar, .infoCliente{
   grid-area: shopCar;
   border: 1px black double;
   border-radius: 5px;
@@ -417,7 +417,7 @@
     }
   /***************** seccion para los botonos de cantidades */
  
-  input[type="submit"]:hover {
+  #btBuyNow:hover {
     background-color: orangered;
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -428,6 +428,7 @@
     background-color: orange;
     color: rgb(255, 255, 255);
     border-radius: 8px;
+    cursor: pointer;
   }
 
   #btBuyNow, #btAnadirCesta{
@@ -476,9 +477,9 @@
   /* *************************VARIOS************** */
  
   .grid-layoutVarios{
-    background: linear-gradient(to right, #242425 , #3f3f3f);
+    background: linear-gradient(to right, #e9e9e9 , #818181);
     font-family: 'Lato', sans-serif;
-    font-size: 1.3em;
+    font-size: 3em;
     margin: 15px auto;
     padding: 5%;
     text-align: center;
@@ -517,6 +518,95 @@
     font-size: 30px;
 
 }
+
+
+/* ********************afterCAR************************************ */
+
+
+.elem-group{
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: 8em auto;
+
+}
+
+.infoCliente{
+  width: 50%;
+  margin: 3em auto;
+  padding: 2em;
+}
+
+#carTitulo{
+  padding-bottom: 1em;
+  border-bottom: 1px grey double !important;
+}
+
+#btConfirmar{
+  width: auto;
+  padding: 2% 2%;
+  font-size: large;
+}
+
+#btConfirmar:hover{
+  background-color: orangered;
+  border-radius: 0.3em;
+  color: white;
+}
+/* 
+
+
+    /* compraOK------------------------------------------------------- */
+
+    .cantProducto{
+      width: 2em;
+    }
+    table.blueTable {
+      /* font-family: "Lucida Console", Monaco, monospace; */
+      border: 1px solid #1C6EA4;
+      background-color: #EEEEEE;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+    table.blueTable td, table.blueTable th {
+      border: 1px solid #AAAAAA;
+      padding: 3px 0px;
+    }
+    table.blueTable tbody td {
+      font-size: 13px;
+    }
+    table.blueTable thead {
+      background: rgb(255, 255, 255);
+      /* background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%); */
+      border-bottom: 2px solid #444444;
+    }
+    table.blueTable thead th {
+      font-size: 15px;
+      /* font-weight: bold; */
+      color: orangered;
+      text-align: center;
+      padding: 0 1em;
+      border-left: 2px solid #D0E4F5;
+    }
+    table.blueTable thead th:first-child {
+      border-left: none;
+    }
+    
+    table.blueTable tfoot td {
+      font-size: 14px;
+    }
+    table.blueTable tfoot .links {
+      text-align: right;
+    }
+    table.blueTable tfoot .links a{
+      display: inline-block;
+      background: #1C6EA4;
+      color: #FFFFFF;
+      padding: 2px 8px;
+      border-radius: 5px;
+    }
 
 /* ------------------------------------------------------------------------------------------------- */
 
@@ -630,6 +720,15 @@
       grid-template-rows: auto auto;
       font-size: 1.2rem;
     }
+
+    /* afterCAR------------------------------------------------------- */
+
+    .infoCliente{
+      width: 80%;
+      margin: 2em auto;
+      padding: 1em;
+    }
+
 
 /* ******************************index */
 
