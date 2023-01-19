@@ -1197,7 +1197,11 @@ width: 40%;
       font-size: 1em;
     }
 
-    
+    #infoChild{
+      border-style: none;
+      box-shadow: none;
+      padding: 0px 0.2em;
+    }
     table.blueTable {
       /* font-family: "Lucida Console", Monaco, monospace; */
       border: 1px solid #1C6EA4;
