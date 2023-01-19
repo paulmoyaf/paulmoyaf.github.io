@@ -1196,6 +1196,8 @@ width: 40%;
       padding: 0.3em 1em;
       font-size: 1em;
     }
+
+    
     table.blueTable {
       /* font-family: "Lucida Console", Monaco, monospace; */
       border: 1px solid #1C6EA4;
@@ -1203,11 +1205,12 @@ width: 40%;
       width: 100%;
       text-align: center;
       border-collapse: collapse;
-      font-size: 0.82em;
+      font-size: 0.6em;
     }
     table.blueTable td, table.blueTable th {
       border: 1px solid #AAAAAA;
       padding: 1em 0px;
+
     }
     table.blueTable tbody td {
       font-size: 0.5em;
@@ -1218,6 +1221,7 @@ width: 40%;
       background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
       background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%); */
       border-bottom: 2px solid #444444;
+      
     }
     table.blueTable thead th {
       font-size: 0.5em;
