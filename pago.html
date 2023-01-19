@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pago</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+    <body class="grid-layout" id="grid-layoutPago">
+
+        <header class="header">
+            <p>paul.moyaf@gmail.com</p>
+            <a href="car.html"><img class="carrito" src="rsc/carro1.png" alt=""></a>
+        </header>
+
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html"><img class="logoShop" src="rsc/PaulLogo1.png" alt=""></a>
+            </div>
+            <div class="container">
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Productos</a></li>
+                        <!-- <li><a href="#">Contactos</a></li> -->
+                        <li><a href="varios.html">Repositorio</a></li>
+                    </ul>
+                </div>
+                <!-- <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span> -->
+            </div>
+        </nav>
+
+        <main id="mainPago">
+                    <div class="childInfo" id="formularioDatos">
+                        <article>
+                            <h3 class="infoTitulo">Datos de la Operación</h3>
+                        </article>
+                
+                        <article class="formulario">
+                            <div class="elem-groupOK">
+                                <label class="labelForm" for="name">Importe: </label>
+                                <label for="name">1200.99</label>
+                            </div>
+                            <div class="elem-groupOK">
+                                <label class="labelForm" for="name">Comercio: </label>
+                                <label for="name">Moya Corporation</label>
+                            </div>
+                            <div class="elem-groupOK">
+                                <label class="labelForm" for="name">Terminal: </label>
+                                <label for="name">5454512-3</label>
+                            </div>
+                            <div class="elem-groupOK">
+                                <label class="labelForm" for="name">Fecha: </label>
+                                <label for="name">19-01-2023 13:15</label>
+                            </div>
+                            <div class="elem-groupOK">
+                                <label class="labelForm" for="name">Email: </label>
+                                <label for="name">paul.moyaf@gmail.com</label>
+                            </div>
+                            <div class="verify">
+                                <center>
+                                    <img class="tarjetas" src="rsc/verify.png" alt="">
+                                </center>
+                            </div>
+
+                            
+                        </article>
+                    </div>
+                
+                    <div class="childInfo">
+                        <article class="tituloImagen">
+                            <h3 class="infoTitulo2">Pago con Tarjeta </h3>
+                            <img class="tarjetas" src="rsc/tarjetas.png" alt="">           
+                        </article>
+                
+                        <article class="formulario" id="formulario2">
+                            <div class="elem-groupOK">
+                                <label class="labelForm" for="name">Nº Tarjeta: </label>
+                                <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+                            </div>
+                            <div class="elem-groupOK">
+                                <label class="labelForm" for="name">Caducidad: </label>
+                                <input type="text" placeholder="mm"> <input type="text" placeholder="aa">
+                            </div>
+                            <div class="elem-groupOK">
+                                <label class="labelForm" for="name">Cod. Seguridad: </label>
+                                <input type="text" placeholder="XXX">
+                            </div>
+                            <center><input type="button" value="Pagar"></center>
+                        </article>
+                    </div>
+        </main>
+
+        <footer class="footer">
+            <!-- <section class="footer main"> -->
+                <section class="footerInicio">
+                    <article>
+                        <h3>Productos</h3>
+                            <p><a href="">Guitarras</a></p>
+                            <p><a href="">Teclado</a></p>
+                            <p><a href="">Baterias</a></p>
+                            <p><a href="">Bajos</a></p>
+                            <p><a href="">Microfonos</a></p>
+                            <p><a href="">Software</a></p>
+                    </article>
+        
+                    <article>
+                        <h3>Empresa</h3>
+                            <p><a href="">Sobre Nosotros</a></p>
+                            <p><a href="">Mision</a></p>
+                            <p><a href="">Vision</a></p>
+                            <p><a href="">Trabaja con Nosotros</a></p>
+                    </article>
+        
+                    <article>
+                        <h3>Atencion al Cliente</h3>
+                            <p><a href="">Contactos</a></p>
+                            <p><a href="">Ayuda</a></p>
+                            <p><a href="">Registra tu producto</a></p>
+                    </article>
+        
+                </section>
+        
+                <section class="footerFin">
+                    <p>&copy; 2022 Pool Production</p>
+                    <p> * Guitar Shop * </p>
+                    <p>Quito - Ecuador</p>
+                </section>
+    
+            <!-- </section> -->
+    
+        </footer>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

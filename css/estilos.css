@@ -647,7 +647,29 @@ padding: 1em 0.5em;
       font-weight: 600;
       color: orangered;
     }
+/* --------------------------------------------------------pago */
 
+.tarjetas{
+  height: 1.8em;
+}
+
+.tituloImagen{
+  display: flex;
+  flex-direction: row;
+  gap:5em;
+  align-items: center;
+  border-bottom: #444444 1px double;
+}
+
+#formularioDatos{
+  padding: 1em 1em;
+}
+
+#mainPago{
+  margin: 0em auto !important;
+  /* margin-right: auto; */
+  display: flex;
+}
 
 /* ------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------- */
