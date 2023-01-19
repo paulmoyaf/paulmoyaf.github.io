@@ -35,82 +35,84 @@
             </div>
         </nav>
 
-        <main class="mainAfterCar">
+        <main class="mainCompraOK">
 
 
 
-                <section class="infoCliente">
-                    <article>
-                        <h3 id="infoTitulo">Información de la Compra</h3>
-                    </article>
-
-
-                    <table class="blueTable">
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Caracteristicas</th>
-                                <th>Precio</th>
-                                <th>Cantidad</th>
-                                <th>Precio Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="rsc/guitar1.jpg" alt=""></td>
-                                <td>Fender, A-300, Blanco, Madera</td>
-                                <td>150€</td>
-                                <td><input class="cantProducto" type="number" value="1"></td>
-                                <td>150€</td>
-                            </tr>
-                            <tr>
-                                <td><img src="rsc/guitar1.jpg" alt=""></td>
-                                <td>Fender, A-300, Blanco, Madera</td>
-                                <td>150€</td>
-                                <td><input class="cantProducto" type="number" value="1"></td>
-                                <td>150€</td>
-                            </tr>
-                            <tr>
-                                <td style='visibility:hidden;'><span id='comite".$resultados['id']."'></span></td>
-                                <td style='visibility:hidden;'><span id='comite".$resultados['id']."'></span></td>
-                                <td style='visibility:hidden;'><span id='comite".$resultados['id']."'></span></td>
-                                <td><input class="cantProducto" type="number" value="1"></td>
-                                <td>150€</td>
-                            </tr>
-                        </tbody>
-                        </tr>
-                    </table>
+                <section class="infoAfter">
+                    <div class="childInfo">
+                        <article>
+                            <h3 class="infoTitulo">Información de la Compra</h3>
+                        </article>
                 
-                    <article class="formulario">
-                        <div class="elem-group">
-                            <label class="labelForm" for="name">Nombre</label>
-                            <label for="name">Paul</label>
-                        </div>
-                        <div class="elem-group">
-                            <label class="labelForm" for="name">Apellido</label>
-                            <label for="name">Moya</label>
-                        </div>
-                        <div class="elem-group">
-                            <label class="labelForm" for="name">Domicilio</label>
-                            <label for="name">Calle Pesillo S9-99</label>
-                        </div>
-                        <div class="elem-group">
-                            <label class="labelForm" for="name">Codigo Potal</label>
-                            <label for="name">48700</label>
-                        </div>
-                        <div class="elem-group">
-                            <label class="labelForm" for="name">Telefono</label>
-                            <label for="name">673 03 40 40</label>
-                        </div>
-                        <div class="elem-group">
-                            <label class="labelForm" for="name">Email</label>
-                            <label for="name">paul.moyaf@gmail.com</label>
-                        </div>
-                    </article>
-
-
-
-
+                        <table class="blueTable">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Caracteristicas</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img class="productoItem" src="rsc/guitarra.png" alt=""></td>
+                                    <td>Fender, A-300, Blanco, Madera</td>
+                                    <td>450.99€</td>
+                                    <td><input class="cantProducto" type="number" value="1"></td>
+                                    <td>450.99€</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="productoItem" src="rsc/guitarra2.png" alt=""></td>
+                                    <td>Fender, A-300, Blanco, Madera</td>
+                                    <td>750.00€</td>
+                                    <td><input class="cantProducto" type="number" value="1"></td>
+                                    <td>750.00€</td>
+                                </tr>
+                                <tr class="totalValor">
+                                    <td id=mergeColumn colspan="3">Total Compra:</td>
+                                    <td>2</td>
+                                    <td>1200.99€</td>
+                                </tr>
+                            </tbody>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <div class="childInfo">
+                        <article>
+                            <h3 class="infoTitulo">Información del Cliente</h3>
+                        </article>
+                
+                        <article class="formulario" id="formulario2">
+                            <div class="elem-group">
+                                <label class="labelForm" for="name">Nombre</label>
+                                <label for="name">Paul</label>
+                            </div>
+                            <div class="elem-group">
+                                <label class="labelForm" for="name">Apellido</label>
+                                <label for="name">Moya</label>
+                            </div>
+                            <div class="elem-group">
+                                <label class="labelForm" for="name">Domicilio</label>
+                                <label for="name">Calle Pesillo S9-99</label>
+                            </div>
+                            <div class="elem-group">
+                                <label class="labelForm" for="name">Codigo Potal</label>
+                                <label for="name">48700</label>
+                            </div>
+                            <div class="elem-group">
+                                <label class="labelForm" for="name">Telefono</label>
+                                <label for="name">673 03 40 40</label>
+                            </div>
+                            <div class="elem-group">
+                                <label class="labelForm" for="name">Email</label>
+                                <label for="name">paul.moyaf@gmail.com</label>
+                            </div>
+                        </article>
+                    </div>
+                    <center><a href="compraOK.html"><button id="btConfirmar" type="submit">Proceder a la compra</button></a></center>
                 </section>
 
 

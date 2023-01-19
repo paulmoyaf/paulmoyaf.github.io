@@ -178,7 +178,7 @@
   justify-content: center;
 }
 
-.shopCar, .infoCliente{
+.shopCar, .infoCliente, .childInfo{
   grid-area: shopCar;
   border: 1px black double;
   border-radius: 5px;
@@ -527,7 +527,10 @@
   margin: 1.5em;
   display: grid;
   grid-template-columns: 8em auto;
+}
 
+.elem-group input{
+padding: 1em 0.5em;
 }
 
 .infoCliente{
@@ -545,6 +548,7 @@
   width: auto;
   padding: 2% 2%;
   font-size: large;
+  margin-bottom: 2em;
 }
 
 #btConfirmar:hover{
@@ -557,23 +561,42 @@
 
     /* compraOK------------------------------------------------------- */
 
+    .infoAfter{
+      width: 60%;
+      margin: 0px auto;
+    }
+
+    .labelForm{
+      color: orangered;
+      font-weight: 400;
+    }
+
+    .infoTitulo{
+      border-bottom: 1px black double;
+      padding-bottom: 1em;
+    }
+    .productoItem{
+      width: 4em;
+      padding: 1em 1em;
+    }
     .cantProducto{
       width: 2em;
     }
     table.blueTable {
       /* font-family: "Lucida Console", Monaco, monospace; */
       border: 1px solid #1C6EA4;
-      background-color: #EEEEEE;
+      background-color: #fffef6;
       width: 100%;
       text-align: center;
       border-collapse: collapse;
+      font-size: 1em;
     }
     table.blueTable td, table.blueTable th {
       border: 1px solid #AAAAAA;
       padding: 3px 0px;
     }
     table.blueTable tbody td {
-      font-size: 13px;
+      font-size: 0.8em;
     }
     table.blueTable thead {
       background: rgb(255, 255, 255);
@@ -608,7 +631,24 @@
       border-radius: 5px;
     }
 
+    #mergeColumn{
+      text-align: right;
+      padding-right: 1em;
+    }
+
+    .totalValor{
+      font-size: 1.2em !important;
+      font-weight: 600;
+      color: orangered;
+    }
+
+
 /* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 
 @media (max-width:880px) {
@@ -727,6 +767,17 @@
       width: 80%;
       margin: 2em auto;
       padding: 1em;
+    }
+
+    .elem-group{
+      margin: 0.5em;
+      display: grid;
+      /* grid-template-columns: 8em auto; */
+      grid-template-rows: auto auto;
+    }
+    
+    .elem-group input{
+    padding: 1em 0.5em;
     }
 
 
@@ -1086,6 +1137,93 @@ width: 40%;
     font-size: 120%;
   }
 
-}
 
-/* ----------------------------------------------------------------------------------------------------------- */
+
+  /* ---------------------------------------------compraOK */
+      
+    .infoAfter{
+      width: auto;
+      margin: 0px auto;
+    }
+
+    .labelForm{
+      color: orangered;
+      font-weight: 400;
+    }
+
+    .infoTitulo{
+      font-size: 0.8em;
+      border-bottom: 1px black double;
+      padding-bottom: 1em;
+    }
+    .productoItem{
+      width: 4em;
+      padding: 1em 1em;
+    }
+    .cantProducto{
+      width: 2em;
+    }
+    table.blueTable {
+      /* font-family: "Lucida Console", Monaco, monospace; */
+      border: 1px solid #1C6EA4;
+      background-color: #fffef6;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      font-size: 0.82em;
+    }
+    table.blueTable td, table.blueTable th {
+      border: 1px solid #AAAAAA;
+      padding: 1em 0px;
+    }
+    table.blueTable tbody td {
+      font-size: 0.5em;
+    }
+    table.blueTable thead {
+      background: rgb(255, 255, 255);
+      /* background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+      background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%); */
+      border-bottom: 2px solid #444444;
+    }
+    table.blueTable thead th {
+      font-size: 0.5em;
+      /* font-weight: bold; */
+      color: orangered;
+      text-align: center;
+      padding: 0 1em;
+      border-left: 2px solid #D0E4F5;
+    }
+    table.blueTable thead th:first-child {
+      border-left: none;
+    }
+
+    table.blueTable tfoot td {
+      font-size: 14px;
+    }
+    table.blueTable tfoot .links {
+      text-align: right;
+    }
+    table.blueTable tfoot .links a{
+      display: inline-block;
+      background: #1C6EA4;
+      color: #FFFFFF;
+      padding: 2px 8px;
+      border-radius: 5px;
+    }
+
+    #mergeColumn{
+      text-align: right;
+      padding-right: 1em;
+    }
+
+    .totalValor{
+      font-size: 1.2em !important;
+      font-weight: 600;
+      color: orangered;
+    }
+
+    #formulario2{
+      font-size: small;
+    }
+}
