@@ -35,13 +35,13 @@
             </div>
         </nav>
 
-        <main id="mainPago">
+        <main class="mainPago">
                     <div class="childInfo" id="formularioDatos">
                         <article>
                             <h3 class="infoTitulo">Datos de la Operación</h3>
                         </article>
                 
-                        <article class="formulario">
+                        <article class="formulario" id="formOperacion">
                             <div class="elem-groupOK">
                                 <label class="labelForm" for="name">Importe: </label>
                                 <label for="name">1200.99</label>
@@ -80,12 +80,15 @@
                 
                         <article class="formulario" id="formulario2">
                             <div class="elem-groupOK">
-                                <label class="labelForm" for="name">Nº Tarjeta: </label>
+                                <label class="labelForm" id="placeTarjeta" for="name">Nº Tarjeta: </label>
                                 <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
                             </div>
                             <div class="elem-groupOK">
                                 <label class="labelForm" for="name">Caducidad: </label>
-                                <input type="text" placeholder="mm"> <input type="text" placeholder="aa">
+                                <div class="divHolder">
+                                    <input type="text" placeholder="mm"> <input type="text" placeholder="aa">
+                                </div>
+                                
                             </div>
                             <div class="elem-groupOK">
                                 <label class="labelForm" for="name">Cod. Seguridad: </label>

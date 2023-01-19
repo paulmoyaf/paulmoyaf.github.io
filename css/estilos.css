@@ -660,15 +660,50 @@ padding: 1em 0.5em;
   align-items: center;
   border-bottom: #444444 1px double;
 }
-
+.verify{
+  border-top: 1px grey double;
+  padding: 0.5em;
+}
 #formularioDatos{
   padding: 1em 1em;
 }
+#formOperacion, #formulario2{
+  font-size: small;
+}
+#formOperacion .elem-groupOK{
+  display: grid;
+  grid-template-columns: 6em auto;
+  justify-content: left;
+}
 
-#mainPago{
-  margin: 0em auto !important;
-  /* margin-right: auto; */
+#formulario2 .elem-groupOK{
+  display: grid;
+  grid-template-columns: 9em auto;
+  justify-content: left;
+}
+
+#formulario2 input{
+  width: auto;
+}
+
+/* #formulario2 > #placeTarjeta{
+  width: 100%;
+} */
+
+.divHolder{
   display: flex;
+  gap: 1em;
+}
+
+.mainPago{
+  grid-area: main;
+  /* border: 1px black double; */
+  width: 60%;
+  margin: 0em auto !important;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -1197,11 +1232,14 @@ width: 40%;
       font-size: 1em;
     }
 
-    #infoChild{
+    #infoValidacion .formulario{
+      font-size: small;
+    }
+    /* #infoChild{
       border-style: none;
       box-shadow: none;
       padding: 0px 0.2em;
-    }
+    } */
     table.blueTable {
       /* font-family: "Lucida Console", Monaco, monospace; */
       border: 1px solid #1C6EA4;
