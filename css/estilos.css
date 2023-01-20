@@ -6,9 +6,11 @@
 
 
 /* @media only screen and (min-width: 900px){ */
+
+
   .grid-layout{
     height: 100%;
-      border:1px dotted rgb(7, 7, 7);
+      /* border:1px dotted rgb(7, 7, 7); */
       background-color: rgb(255, 255, 255);
       display: grid;
       grid-template-areas: 'header header'
@@ -792,6 +794,69 @@ box-shadow: none;
   width: 30em;
   height: 20em;
 }
+
+
+/* ------------------------------------------------------------------------------------------indexCopy */
+
+.productosGrid{
+  grid-area: main;
+  width: 100%;
+  padding: 0px auto;
+  /* background: #1C6EA4; */
+  display: grid;
+  grid-template-areas: '. ob1 ob2 ob3 .'
+                      '. ob1 ob2 ob3 .'
+                      'ob4 ob5 ob6 ob7 ob8';
+  grid-template-columns: 15em 15em 15em 15em 15em;
+  grid-template-rows: 60% 30%;
+  gap: 8em;
+  justify-content: center;
+
+}
+
+#ob1{
+  grid-area: ob1;
+}
+#ob2{
+  grid-area: ob2;
+}
+#ob3{
+  grid-area: ob3;
+}
+#ob4{
+  grid-area: ob4;
+}
+#ob5{
+  grid-area: ob5;
+}
+#ob6{
+  grid-area: ob6;
+}
+#ob7{
+  grid-area: ob7;
+}
+#ob8{
+  grid-area: ob8;
+}
+#ob9{
+  grid-area: ob9;
+  visibility: hidden;
+}
+
+
+.obj1 #instrumento1, .obj2 #instrumento1, .obj2 #instrumentoKey{
+  width: 100%;
+} 
+
+.obj1 #marcaInd, .obj2 #marcaInd{
+  width: 100%;
+}
+
+
+.navMovil{
+  display: none;
+}
+
 /* ------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------- */
@@ -802,6 +867,9 @@ box-shadow: none;
 
 @media (max-width:880px) {
 
+  /* .navMovil{
+    display:block;
+  } */
 
   body{
     margin: 0;
@@ -936,19 +1004,17 @@ box-shadow: none;
 #picPrincipal{
   grid-area: picPrincipal;
   width: 100%;
-  
 }
 
 .instrumentosGrid{
 
   grid-area: instrumentosGrid;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   text-align: center;
-  /* margin-top: -200px; */
-  /* gap: %; */
+  margin: 1em auto;
+  gap: 3em;
   /* background-color: #2196F3; */
-
 }
 
 #instrumento1{
@@ -957,7 +1023,7 @@ width: 40%;
 }
 
 #marcaInd{
-  width: 25%;
+  width: 4em;
   padding-top: 5%;
 }
 
