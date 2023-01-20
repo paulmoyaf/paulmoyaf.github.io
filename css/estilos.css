@@ -1466,17 +1466,15 @@ width: 40%;
   flex-direction: column;
 }
 
-#infoContacto{
+/* #infoContacto{
   width: auto;
-}
+} */
 
 #mensajeDiv{
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
-  /* gap: 1em; */
-  /* margin-top: 2em;   */
-  justify-content: center;
+  align-items:center;
+  /* justify-content: center; */
 }
 
 #imgMensaje{
@@ -1485,11 +1483,10 @@ width: 40%;
 .mensaje{
   text-align: center;
   font-size: large;
-  color: orangered;
 }
 .divUbicacion{
-  width: 90%;
-  margin: 0px auto;
+  width: auto;
+  padding: 0px 1em;
   margin-bottom: 3em;
   display: flex;
   flex-direction: column;
@@ -1498,9 +1495,10 @@ width: 40%;
 .cajaMapa{
   padding:0px auto;
 }
+.mapouter{
+}
 #gmap_canvas{
-  width: 13em;
-  height: 10em;
+  width: 100% !important;
 }
 
 }
