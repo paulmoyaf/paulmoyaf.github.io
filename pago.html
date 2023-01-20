@@ -64,7 +64,7 @@
                             </div>
                             <div class="verify">
                                 <center>
-                                    <img class="tarjetas" src="rsc/verify.png" alt="">
+                                    <img class="tarjetas" id="tarjetaVerify" src="rsc/verify.png" alt="">
                                 </center>
                             </div>
 
@@ -72,29 +72,29 @@
                         </article>
                     </div>
                 
-                    <div class="childInfo">
+                    <div class="childInfo" id="formularioDato2">
                         <article class="tituloImagen">
-                            <h3 class="infoTitulo2">Pago con Tarjeta </h3>
+                            <h3 class="infoTitulo2" id="titulo2">Pago con Tarjeta </h3>
                             <img class="tarjetas" src="rsc/tarjetas.png" alt="">           
                         </article>
                 
                         <article class="formulario" id="formulario2">
                             <div class="elem-groupOK">
-                                <label class="labelForm" id="placeTarjeta" for="name">Nº Tarjeta: </label>
+                                <label class="labelForm" for="name">Nº Tarjeta: </label>
                                 <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
                             </div>
                             <div class="elem-groupOK">
                                 <label class="labelForm" for="name">Caducidad: </label>
                                 <div class="divHolder">
-                                    <input type="text" placeholder="mm"> <input type="text" placeholder="aa">
+                                    <input class="holderSmall" type="text" placeholder="mm"><small>/</small><input class="holderSmall" type="text" placeholder="aa">
                                 </div>
                                 
                             </div>
                             <div class="elem-groupOK">
                                 <label class="labelForm" for="name">Cod. Seguridad: </label>
-                                <input type="text" placeholder="XXX">
+                                <input class="holderSmall" type="text" placeholder="XXX">
                             </div>
-                            <center><input type="button" value="Pagar"></center>
+                            <center><a href="gracias.html"><input class="btBuyNow2" type="button" value="Pagar"></a></center>
                         </article>
                     </div>
         </main>

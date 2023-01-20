@@ -417,8 +417,8 @@
     }
   /***************** seccion para los botonos de cantidades */
  
-  #btBuyNow:hover {
-    background-color: orangered;
+  #btBuyNow:hover, .btBuyNow2:hover {
+    background-color: orangered !important;
     color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 8px;
@@ -433,6 +433,13 @@
 
   #btBuyNow, #btAnadirCesta{
     padding: 5px 5px;
+  }
+
+  .btBuyNow2{
+    margin-top: 1.2em;
+    font-size: large;
+    padding: 0.3em 0.8em !important;
+    text-transform: uppercase;
   }
   /***************************** seccion para las estrellas */
 
@@ -656,19 +663,28 @@ padding: 1em 0.5em;
 .tituloImagen{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   gap:5em;
   align-items: center;
   border-bottom: #444444 1px double;
+  background: #e2e2db;
 }
 .verify{
   border-top: 1px grey double;
   padding: 0.5em;
+  background: white;
 }
 #formularioDatos{
   padding: 1em 1em;
+  background: #fcfcf2;
 }
+
 #formOperacion, #formulario2{
   font-size: small;
+}
+
+#formulario2{
+  margin-top: 1em;
 }
 #formOperacion .elem-groupOK{
   display: grid;
@@ -678,12 +694,13 @@ padding: 1em 0.5em;
 
 #formulario2 .elem-groupOK{
   display: grid;
-  grid-template-columns: 9em auto;
+  grid-template-columns: 9em 12em;
   justify-content: left;
 }
 
 #formulario2 input{
-  width: auto;
+  padding: 0px 0.8em;
+  text-align: center;
 }
 
 /* #formulario2 > #placeTarjeta{
@@ -692,7 +709,7 @@ padding: 1em 0.5em;
 
 .divHolder{
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .mainPago{
@@ -700,10 +717,26 @@ padding: 1em 0.5em;
   /* border: 1px black double; */
   width: 60%;
   margin: 0em auto !important;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.holderSmall{
+  width: 2em;
+}
+
+/* ---------------------------------------------------------gracias------------------- */
+
+.gracias{
+  grid-area: main;
+}
+#graciasDiv{
+
+}
+
+#imgFinal{
+  width: 50%;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -1305,5 +1338,48 @@ width: 40%;
     #formulario2{
       font-size: large;
     }
+
+
+
+      /* ----------------------------------------pago-------------------------------- */
+
+  .mainPago{
+    grid-area: main;
+    /* border: 1px black double; */
+    width: 100%;
+    margin: 0em auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #formulario2{
+    margin-top: 1em;
+    font-size: small !important;
+  }
+
+  #formulario2 .elem-groupOK{
+    display: grid;
+    grid-template-columns: 9em 15em;
+    justify-content: left;
+  }
+
+  #titulo2{
+    font-size: medium;
+  }
+
+  .tarjetas{
+    height: 1em;
+  }
+
+  #tarjetaVerify{
+    height: 2em !important;
+  }
+  .btBuyNow2{
+    font-size: medium;
+  }
+  
+/* ------------------------------------------------------------------------------------- */
+
 
 }
