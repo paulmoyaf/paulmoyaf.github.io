@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Informacion</title>
+    <title>Contacto</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -35,16 +35,14 @@
             </div>
         </nav>
 
-        <main class="mainAfterCar">
+        <main class="mainContacto">
 
-
-
-                <section class="infoCliente">
+                <section class="infoCliente" id="infoContacto">
                     <article>
-                        <h3 id="carTitulo">Información del Cliente</h3>
+                        <h3 id="carTitulo">Contacto</h3>
                     </article>
-                    <form action="">
-                        <article class="formulario" id="formPago">
+                    <article class="formulario" id="formPago">
+                        <form action="">
                             <div class="elem-group">
                                 <label for="name">Nombre:</label>
                                 <input type="text" name="visitor_name" id="name" placeholder="Ingrese Nombre" required>
@@ -54,14 +52,6 @@
                                 <input type="text" name="visitor_name" id="name" placeholder="Ingrese Apellido" required>
                             </div>
                             <div class="elem-group">
-                                <label for="name">Domicilio:</label>
-                                <input type="text" name="visitor_name" id="name" placeholder="Direccion de su domicilio" required>
-                            </div>
-                            <div class="elem-group">
-                                <label for="name">Codigo Postal:</label>
-                                <input type="text" name="visitor_postkodea" id="name" placeholder="Codigo Postal" required>
-                            </div>
-                            <div class="elem-group">
                                 <label for="name">Teléfono:</label>
                                 <input type="text" name="visitor_telefono" id="name" placeholder="Numero de Telefono">
                             </div>
@@ -69,72 +59,38 @@
                                 <label for="name">Email:</label>
                                 <input type="email" name="visitor_name" id="name" placeholder="Correo electronico" required>
                             </div>
-                            <center><a href="validacion.html"><button id="btConfirmar" type="submit">Confirmar</button></a></center>
-                        </article>
-                    </form>
-
+                            <div class="elem-group">
+                                <label for="name">Mensaje:</label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <center><a href="validacion.html"><button id="btConfirmar" type="submit">Enviar Información</button></a></center>
+                        
+                        </form>
+                    </article>
                 </section>
 
-
-                
-
-                <section class="relacionadosCar" >
-                    <h3 id="titulos">Productos Recomendados</h3>
-                    <section class="variosCompra">
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/ibanez.png" alt="" width="40%">
-                                <img id="instrumento" src="rsc/guitarra3.png" alt="">
-                                <section>
-                                    <p>Ibanez 500x</p>
-                                    <p id="precioVarios">150.<sup>00</sup> €</p>
-                                </section>
-                            </a>
-                        </article>
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/yamaha.png" alt="" width="40%">
-                                <img id="instrumento" src="rsc/guitarra2.png" alt="">
-                                <section>
-                                    <p>Yamaha Rev-5</p>
-                                    <p id="precioVarios">750.<sup>00</sup> €</p>
-                                </section>
-                            </a>                    
-                        </article> 
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/fender.png" alt="" width="40%">
-                                <img id="instrumentoKey" src="rsc/key1.png" alt="">
-                                <section>
-                                    <p>Fender Telecaster 300c</p>
-                                    <p id="precioVarios">2100.<sup>00</sup> €</p>
-                                </section>
-                            </a>                    
-                        </article>
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/yamaha.png" alt="" width="40%">
-                                <img id="instrumentoKey" src="rsc/key2.png" alt="">
-                                <section>
-                                    <p>Yamaha Rev-5</p>
-                                    <p id="precioVarios">750.<sup>00</sup> €</p>
-                                </section>
-                            </a>                    
-                        </article> 
-                        <article>
-                            <a class="producto" href="guitar.html" >
-                                <img src="rsc/yamaha.png" alt="" width="40%">
-                                <img id="instrumentoKey" src="rsc/key3.png" alt="">
-                                <section>
-                                    <p>Fender Telecaster 300c</p>
-                                    <p id="precioVarios">2100.<sup>00</sup> €</p>
-                                </section>
-                            </a>                    
-                        </article>
-                    </section>
+                <section class="divUbicacion">
+                    <h3 id="carTitulo">Ubicación</h3>
+                    <div class="cajaMapa">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=ondarroa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                    scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <!-- <a href="https://123movies-to.org">123movies</a><br> -->
+                                <!-- <a href="https://www.embedgooglemap.net">how to embed google map</a> -->
+                            </div>
+                        </div>
+                        <div id="mensajeDiv">
+                            <article>
+                                <img id="imgMensaje" src="rsc/PaulLogo1.png" alt="">
+                            </article>
+                            <article class="mensaje">
+                                <!-- <h3>Eskerrik asko erosteagatik!!!</h3> -->
+                                <p>Berehala jarriko gara zurekin harremanetan.</p>
+                            </article>
+                        </div>
+                    </div>
                 </section>
-
-        
         </main>
 
         <footer class="footer">

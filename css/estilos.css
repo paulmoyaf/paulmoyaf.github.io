@@ -748,8 +748,50 @@ box-shadow: none;
 #preparar{
   width: 8em;
 }
+/* --------------------------------------------------contacto------------------ */
+.mainContacto{
+  grid-area: main;
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items:baseline;
+}
 
+#mensajeDiv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;  
+  justify-content: center;
+}
 
+#imgMensaje{
+ width: 10em;
+}
+.mensaje{
+  text-align: center;
+  font-size: large;
+  color: orangered;
+}
+.divUbicacion{
+  display: flex;
+  flex-direction: column;
+}
+
+/* .mapouter {
+  position: relative;
+  text-align: right;
+  height: 285px;
+  width: 500px;
+} */
+
+#gmap_canvas{
+  width: 30em;
+  height: 20em;
+}
 /* ------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------- */
@@ -760,7 +802,50 @@ box-shadow: none;
 
 @media (max-width:880px) {
 
+/* --------------------------------------------------contacto------------------ */
+.mainContacto{
+  width: auto;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
 
+#infoContacto{
+  width: 80%;
+}
+
+#mensajeDiv{
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  /* gap: 1em; */
+  /* margin-top: 2em;   */
+  justify-content: center;
+}
+
+#imgMensaje{
+ width: 4em;
+}
+.mensaje{
+  text-align: center;
+  font-size: large;
+  color: orangered;
+}
+.divUbicacion{
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.cajaMapa{
+  padding:0px auto;
+}
+#gmap_canvas{
+  width: 16em;
+  height: 10em;
+}
 
 
   body{
