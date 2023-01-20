@@ -676,7 +676,7 @@ padding: 1em 0.5em;
 }
 #formularioDatos{
   padding: 1em 1em;
-  background: #fcfcf2;
+  background: #fffbf6;
 }
 
 #formOperacion, #formulario2{
@@ -1374,7 +1374,7 @@ width: 40%;
 
   #formulario2 .elem-groupOK{
     display: grid;
-    grid-template-columns: 9em 15em;
+    grid-template-columns: 9em 13em;
     justify-content: left;
   }
 
@@ -1414,7 +1414,7 @@ width: 40%;
       #preparar{
         width: 5em;
       }
-      
+
 /* ------------------------------------------------------------------------------------- */
 
 
