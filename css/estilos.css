@@ -41,17 +41,7 @@
       font-size: 65%;
     }
 
-    .nav{
-      grid-area: nav;
-      background-color: rgb(255, 255, 255);
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      border-top: 0.5px rgb(204, 204, 204);
-      border-style:groove;
-      border-left: none;
-      border-right: none;
-    }
+ 
 
     .mainIndex{
       grid-area: main;
@@ -83,15 +73,18 @@
     }
 
 
-    .navlinks{
-      /* background-color: aqua; */
+     .nav{
+      background-color: rgb(255, 255, 255);
+      border-top: 0.5px rgb(204, 204, 204);
+      border-style:groove;
+      border-left: none;
+      border-right: none;
+    }
+/*.navlinks{
       display: flex;
-      /* align-items: center; */
     }
     
     .nav div.main_list ul li {
-      /* background-color: rgb(43, 241, 3);   */
-      /* padding-left: 2rem; */
       list-style: none;
       width: 120px;
       text-align: center;
@@ -99,18 +92,13 @@
     
     .nav div.main_list ul li a {
         text-decoration: none;
-        /* color: #fff; */
         line-height: 65px;
         font-size: 1.2rem;
     }
     
-    /* .nav div.main_list ul li:hover {
-      background-color: rgb(175, 175, 153);  
-    } */
-    
     .nav div.main_list ul li a:hover {
         color: chocolate;
-    }
+    } */
     
     .carrito{
       /* background-color: blue; */
@@ -857,6 +845,72 @@ box-shadow: none;
   display: none;
 }
 
+
+
+/* ----------------------------------------------------nav2---------------------------------------- */
+
+.nav {
+  grid-area: nav;
+  /* height: 50px; */
+  width: auto;
+  background-color: #4d4d4d;
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* background-color: rgb(255, 255, 255); */
+  border-top: 0.5px rgb(204, 204, 204);
+  /* border-style:groove; */
+  border-left: none;
+  border-right: none;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  /* color: #fff; */
+  /* padding: 10px 10px 10px 10px; */
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  /* padding: 13px 10px 13px 10px; */
+  padding: 1.8em 15px;
+  text-decoration: none;
+  color: #efefef;
+  height: 1.8em;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(41, 38, 37, 0.4);
+  /* background-color: rgb(255, 69, 0) */
+  color: white;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+
+
+
 /* ------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------- */
@@ -866,10 +920,7 @@ box-shadow: none;
 
 
 @media (max-width:880px) {
-
-  /* .navMovil{
-    display:block;
-  } */
+/* @media (max-width:600px) { */
 
   body{
     margin: 0;
@@ -907,19 +958,6 @@ box-shadow: none;
       width: auto;
     }
   
-    .nav{
-      grid-area: nav;
-      background-color: rgb(255, 255, 255);
-      display: flex;
-      justify-content:space-around;
-      align-items: center;
-      border-top: 0.5px rgb(165, 165, 165);
-      border-style:groove;
-      border-left: none;
-      border-right: none;
-      padding-left: 2%;
-      width: auto;
-    }
   
     main{
       grid-area: main;
@@ -937,25 +975,56 @@ box-shadow: none;
       padding-left: 2%;
       padding-right: 2%;
     }
-  
-    .navlinks{
-      display: flex;
+
+
+    /* ------------------------------------------------------NAV----------------- */
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      
     }
-    
-    .nav div.main_list ul li {
-      list-style: none;
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 6.65em;
+      padding: 13px;
     }
-    
-    .nav div.main_list ul li a {
-        text-decoration: none;
-        line-height: 65px;
-        font-size: 1rem;
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
     }
-    
-    .nav div.main_list ul li a:hover {
-        color: chocolate;
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
     }
-    
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: auto;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: auto;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      /* height: auto; */
+      overflow-y: auto;
+    }
+
+    /* -----------------------------------------------------------HEADER */
     .carrito{
       width: 2rem;
     }
@@ -963,7 +1032,7 @@ box-shadow: none;
       width: 5rem;
       /* padding-left: 15%; */
     }
-
+/* ----------------------------------------------------------------------------- */
     .secMain{
 
       display: flex;
@@ -1003,7 +1072,7 @@ box-shadow: none;
 
 #picPrincipal{
   grid-area: picPrincipal;
-  width: 100%;
+  height: 10em;
 }
 
 .instrumentosGrid{
