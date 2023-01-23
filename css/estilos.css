@@ -38,7 +38,7 @@
       justify-content:space-around;
       align-items: center;
       color: white;
-      font-size: 65%;
+      font-size: 1.2em;
     }
 
  
@@ -80,36 +80,71 @@
       border-left: none;
       border-right: none;
     }
-/*.navlinks{
+    
+    .titleGps{
       display: flex;
+      color: white;
+      align-items: center;
+      gap: 0.3em;
     }
-    
-    .nav div.main_list ul li {
-      list-style: none;
-      width: 120px;
-      text-align: center;
+
+    .titleGps a {
+      color: white;
     }
-    
-    .nav div.main_list ul li a {
-        text-decoration: none;
-        line-height: 65px;
-        font-size: 1.2rem;
+
+    .gps{
+      width: 1em;
     }
-    
-    .nav div.main_list ul li a:hover {
-        color: chocolate;
-    } */
-    
+
     .carrito{
       /* background-color: blue; */
       /* padding-left: 2rem; */
       width: 2rem;
     }
+
     .logoShop{
       width: 5rem;
       /* display: none; */
     }
-
+    /* -----------------------------------------------carrito ---- */
+    .btCar {
+      padding: 2px 12px;
+      border: unset;
+      border-radius: 8px;
+      color: #212121;
+      z-index: 1;
+      background: #e8e8e8;
+      position: relative;
+      font-weight: 1000;
+      /* font-size: 17px; */
+      -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+      transition: all 250ms;
+      overflow: hidden;
+     }
+     
+     .btCar::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      border-radius: 8px;
+      background-color: orange;
+      z-index: -1;
+      -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+      transition: all 250ms
+     }
+     
+     .btCar:hover {
+      color: #e8e8e8;
+     }
+     
+     .btCar:hover::before {
+      width: 100%;
+     }
 
 /* *******************index */
     #picPrincipal{
@@ -784,71 +819,14 @@ box-shadow: none;
 }
 
 
-/* ------------------------------------------------------------------------------------------indexCopy */
 
-.productosGrid{
-  grid-area: main;
-  width: 100%;
-  padding: 0px auto;
-  /* background: #1C6EA4; */
-  display: grid;
-  grid-template-areas: '. ob1 ob2 ob3 .'
-                      '. ob1 ob2 ob3 .'
-                      'ob4 ob5 ob6 ob7 ob8';
-  grid-template-columns: 15em 15em 15em 15em 15em;
-  grid-template-rows: 60% 30%;
-  gap: 8em;
-  justify-content: center;
+/* ----------------------------------------------------nav2---------------------------------------- */
 
-}
-
-#ob1{
-  grid-area: ob1;
-}
-#ob2{
-  grid-area: ob2;
-}
-#ob3{
-  grid-area: ob3;
-}
-#ob4{
-  grid-area: ob4;
-}
-#ob5{
-  grid-area: ob5;
-}
-#ob6{
-  grid-area: ob6;
-}
-#ob7{
-  grid-area: ob7;
-}
-#ob8{
-  grid-area: ob8;
-}
-#ob9{
-  grid-area: ob9;
-  visibility: hidden;
-}
-
-
-.obj1 #instrumento1, .obj2 #instrumento1, .obj2 #instrumentoKey{
-  width: 100%;
-} 
-
-.obj1 #marcaInd, .obj2 #marcaInd{
-  width: 100%;
-}
 
 
 .navMovil{
   display: none;
 }
-
-
-
-/* ----------------------------------------------------nav2---------------------------------------- */
-
 .nav {
   grid-area: nav;
   /* height: 50px; */
@@ -907,8 +885,6 @@ box-shadow: none;
 .nav > #nav-check {
   display: none;
 }
-
-
 
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -976,6 +952,14 @@ box-shadow: none;
       padding-right: 2%;
     }
 
+    .gps{
+      width: 1.5em;
+    }
+
+    .titleGps{
+      font-size: 1.2em;
+      padding: 1em;
+    }
 
     /* ------------------------------------------------------NAV----------------- */
     .nav > .nav-btn {
@@ -983,13 +967,17 @@ box-shadow: none;
       position: absolute;
       right: 0px;
       top: 0px;
-      
+      align-items: center;
     }
+
     .nav > .nav-btn > label {
       display: inline-block;
-      width: 50px;
-      height: 6.65em;
-      padding: 13px;
+      width: auto;
+      /* width: 50px; */
+      /* padding: 13px; */
+      height: 3.3em;
+      padding: 3em 2em;
+
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
       background-color: rgba(0, 0, 0, 0.3);
@@ -1015,8 +1003,9 @@ box-shadow: none;
       display: block;
       width: auto;
     }
+    /* // cuanto se ve cuando aparece */
     .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
+      height: 0px; 
     }
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
@@ -1024,14 +1013,7 @@ box-shadow: none;
       overflow-y: auto;
     }
 
-    /* -----------------------------------------------------------HEADER */
-    .carrito{
-      width: 2rem;
-    }
-    .logoShop{
-      width: 5rem;
-      /* padding-left: 15%; */
-    }
+
 /* ----------------------------------------------------------------------------- */
     .secMain{
 
