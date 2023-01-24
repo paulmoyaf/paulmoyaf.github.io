@@ -92,22 +92,25 @@
                         </article>
                 
                         <article class="formulario" id="formulario2">
-                            <div class="elem-groupOK">
-                                <label class="labelForm" for="name">Nº Tarjeta: </label>
-                                <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
-                            </div>
-                            <div class="elem-groupOK">
-                                <label class="labelForm" for="name">Caducidad: </label>
-                                <div class="divHolder">
-                                    <input class="holderSmall" type="text" placeholder="mm"><small>/</small><input class="holderSmall" type="text" placeholder="aa">
+                            <form action="gracias.html">
+                                <div class="elem-groupOK">
+                                    <label class="labelForm" for="name">Nº Tarjeta: </label>
+                                    <input type="text" name="aa" placeholder="XXXX-XXXX-XXXX-XXXX" required>
                                 </div>
-                                
-                            </div>
-                            <div class="elem-groupOK">
-                                <label class="labelForm" for="name">Cod. Seguridad: </label>
-                                <input class="holderSmall" type="text" placeholder="XXX">
-                            </div>
-                            <center><a href="gracias.html"><input class="btBuyNow2" type="button" value="Pagar"></a></center>
+                                <div class="elem-groupOK">
+                                    <label class="labelForm" for="name">Caducidad: </label>
+                                    <div class="divHolder">
+                                        <input class="holderSmall" type="text" placeholder="mm" required><small>/</small><input class="holderSmall" type="text" placeholder="aa" required>
+                                    </div>
+                                    
+                                </div>
+                                <div class="elem-groupOK">
+                                    <label class="labelForm" for="name">Cod. Seguridad: </label>
+                                    <input class="holderSmall" type="text" placeholder="XXX" required>
+                                </div>
+                                <center><button class="btBuyNow2" type="submit">Pagar</button></center>
+                                <!-- <center><button class="btBuyNow2" type="button" value="Pagar"></center> -->
+                            </form>
                         </article>
                     </div>
         </main>
