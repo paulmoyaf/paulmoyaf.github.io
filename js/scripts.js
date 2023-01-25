@@ -1,6 +1,6 @@
 
-const pathFile  = ["audio/1audio.wav","audio/2audio.wav","audio/3audio.wav","audio/4audio.wav","audio/5audio.wav","audio/6audio.wav","audio/7audio.wav","audio/8audio.wav","audio/9audio.wav"];
-const canciones = ['Cancion x', 'Cancion 2', 'Cancion 3', 'Cancion 4', 'Cancion 5'];
+const pathFile  = ["rsc/audio/1audio.wav","rsc/audio/2audio.wav","rsc/audio/3audio.wav","rsc/audio/6audio.wav","rsc/audio/5audio.wav","rsc/audio/4audio.wav","rsc/audio/7audio.wav","rsc/audio/8audio.wav","rsc/audio/9audio.wav"];
+const canciones = ['Border Song - Elton John', 'A Case of You - Joni Mitchell', 'Knockin On Heavens Door - Bob Dylan', 'Lean On Me - Bill Withers', 'Way Over Yonder - Carole King'];
 
 const songList  = ["1audio.mp3"];
 
