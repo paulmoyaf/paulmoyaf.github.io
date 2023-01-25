@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor de Musica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilosReproductor.css">
+    <script defer src="fontawesome/js/all.js"></script>
+    
+</head>
+<body>
+
+    <!-- <audio id="player" ontimeupdate="updateProgress();">
+		<source  id="source">	
+		Audio no soportado	
+	</audio> -->
+
+    <header class="titulo">
+        <a href="index.html"><img class="imgLogo" src="rsc/PaulLogo1.png" alt="" ></a>
+        <h1>Reproductor de Musica</h1>
+    </header>
+
+    <nav>
+        <div class="tituloLista">
+                 <p>Lista de Canciones</p>
+        </div>
+
+        <div id="playList">
+        </div>
+
+        <div id="controls">
+            <!-- <div class="timer" id="timer">
+                &nbsp;
+            </div> -->
+            <!-- <div class="volumen">
+                Vol: 
+                <i class="fas fa-volume-down"></i> 
+                <input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75"> 
+                <i class="fas fa-volume-up"></i>
+            </div>  -->
+            
+            <!-- <span id="currentPlay"></span><br> -->
+            <!-- <progress id="progress" value="0" max="100" ></progress> -->
+        </div>
+        
+    </nav>
+    <main>
+        <div id = "idBotnones">
+
+            <button id= "btnReproducir" class="btn btn-primary">Seleccione Cancion</button>
+            <button id= "btnHabilitar"  class="btn btn-success">Habilitar Canciones</button>
+            <button id= "btnBorrar"     class="btn btn-danger">Borrar Cancion</button>
+            <!-- <button id= "btnStop" class="btn btn-secondary">STOP</button>        -->
+     
+        </div>
+
+   </main>
+    <aside> 
+        <p>&copy; 2022 Paulinho's Mix ♪</p>
+    </aside>
+
+    
+    <footer>
+        <h1>Paul Creation</h1>
+    </footer>
+    
+
+    <script src="js/scripts.js"></script>
+    <!-- <script src="ejercicioV4.js"></script> -->
+    <!-- <script src="assets/js/ciclos/for.js"></script> -->
+</body>
+</html>

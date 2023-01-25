@@ -55,8 +55,7 @@
     .secMain{
       grid-area: main;
       width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 2em auto;
       display: grid;
       grid-template-areas: 'guitarPrincipal recomendados'
                           'relacionados relacionados';
@@ -167,8 +166,51 @@
       /* margin-top: -200px; */
       /* gap: %; */
       /* background-color: #2196F3; */
+    }
+
+    /* --------------------------------------------------GUITARRAS - TECLADOS ------- */
+    .mainGuitarras{
+      grid-area: main;
+      width: 80%;
+      margin: 0px auto;
+      padding: 3em 0px;
+    }
+    .instrumentosGrid3{
+
+      width: 90%;
+      margin: auto 3em;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      text-align: center;
+      margin-bottom: 3em;
+      /* margin-top: -200px; */
+      gap: 2em;
+      /* background-color: #2196F3; */
+    }
+
+    .instrumentosGrid5{
+
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      text-align: center;
+      /* align-item: center; */
+      /* margin-top: -200px; */
+      gap: 2em;
+      /* background-color: #2196F3; */
 
     }
+
+    .instrumentosGrid5 article, .instrumentosGrid3 article{
+      border: rgba(0, 0, 0, 0.04) 1px double;
+    }
+    
+    .stockTitulo{
+      color: orangered;
+      padding-bottom: 1em;
+      border-bottom: 1px grey double;
+    }
+    /* ----------------------------------------------------------------------- */
+
     #instrumento1{
       padding-top: 5%;
     width: 40%;
@@ -296,7 +338,7 @@
                           'video video';
       grid-template-columns: 50% auto;
       grid-template-rows: auto 80%;
-      gap: 2%;
+      gap: 3em;
       justify-items: center;
     }
 
@@ -308,15 +350,18 @@
       padding-top: 5%;
     }
     #guitarCaracteristicas{
-      background-color: rgb(253, 253, 247);
+      background-color: rgba(253, 253, 247,0.5);
       grid-area: guitarCaracteristicas;
       display: flex;
       flex-flow: column;
-      padding: 5%;
+      padding: 0.5em;
+
       /* padding-top: 5%;
       padding-left: 5%; */
     }
     #video{
+      border-top: grey 1px double;
+      padding-top: 3em;
       grid-area: video;
       width: 90%;
     }
@@ -1084,6 +1129,43 @@ width: 40%;
   width: 65%;
 }
 
+    /* --------------------------------------------------GUITARRAS - TECLADOS ------- */
+    .mainGuitarras{
+      /* grid-area: main; */
+      width: 95%;
+      margin: 0px auto;
+      padding: 1em 0px;
+      /* background: #1C6EA4; */
+      /* padding: 3em 0px; */
+    }
+    .instrumentosGrid3{
+
+      width: auto;
+      /* margin: auto 3em; */
+      display: grid;
+      grid-template-columns: auto;
+      text-align: center;
+      margin-bottom: 3em;
+      /* margin-top: -200px; */
+      gap: 2em;
+      /* background-color: #2196F3; */
+    }
+
+    .instrumentosGrid5{
+
+      display: grid;
+      grid-template-columns: auto auto;
+      text-align: center;
+      gap: 2em;
+    }
+
+    .instrumentosGrid5 article, .instrumentosGrid3 article{
+      border: none;
+    }
+    
+    .stockTitulo{
+      font-size: 1.2em;
+    }
 
 /* **********************mainCAR****************************** */
 

@@ -40,11 +40,11 @@
             </div>
             
             <div class="nav-links">
-                <a href="guitar.html" target="_blank">Guitarras</a>
-                <a href="#" target="_blank">Teclados</a>
-                <a href="contacto.html" target="_blank">Contacto</a>
-                <a href="#" target="_blank">Software</a>
-                <a href="varios.html" target="_blank">Proyectos Github</a>   
+                <a href="guitarras.html" target="_self">Guitarras</a>
+                <a href="teclados.html" target="_self">Teclados</a>
+                <a href="contacto.html" target="_self">Contacto</a>
+                <a href="reproductor.html" target="_self">Software</a>
+                <a href="varios.html" target="_self">Proyectos Github</a>     
             </div>
         </nav>
     
@@ -55,29 +55,30 @@
                         <h3 id="carTitulo">Contacto</h3>
                     </article>
                     <article class="formulario" id="formPago">
-                        <form action="">
+                        <form action="https://formsubmit.co/paul.moyaf@gmail.com" method="post">
+                        <!-- <form action="assets/php/enviar.php" method="post"> -->
+                        <!-- <form action="mailto:paul.moyaf@gmail.com" method="POST"> -->
                             <div class="elem-group">
-                                <label for="name">Nombre:</label>
-                                <input type="text" name="visitor_name" id="name" placeholder="Ingrese Nombre" required>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" name="visitor_nombre" id="nombre" placeholder="Ingrese Nombre" required>
                             </div>
                             <div class="elem-group">
-                                <label for="name">Apellido:</label>
-                                <input type="text" name="visitor_name" id="name" placeholder="Ingrese Apellido" required>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" name="visitor_apellido" id="apellido" placeholder="Ingrese Apellido" required>
                             </div>
                             <div class="elem-group">
-                                <label for="name">Teléfono:</label>
-                                <input type="text" name="visitor_telefono" id="name" placeholder="Numero de Telefono">
+                                <label for="fone">Teléfono:</label>
+                                <input type="text" name="visitor_telefono" id="fone" placeholder="Numero de Telefono">
                             </div>
                             <div class="elem-group">
-                                <label for="name">Email:</label>
-                                <input type="email" name="visitor_name" id="name" placeholder="Correo electronico" required>
+                                <label for="email">Email:</label>
+                                <input type="email" name="visitor_email" id="email" placeholder="Correo electronico" required>
                             </div>
                             <div class="elem-group">
-                                <label for="name">Mensaje:</label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea name="visitor_msn" id="mensaje" cols="30" rows="10"></textarea>
                             </div>
-                            <center><a href="validacion.html"><button id="btConfirmar" type="submit">Enviar Información</button></a></center>
-                        
+                            <center><input id="btConfirmar" type="submit">Enviar Información</input></center>
                         </form>
                     </article>
                 </section>
