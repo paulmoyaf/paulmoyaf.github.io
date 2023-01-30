@@ -210,10 +210,15 @@ table {
       /* padding: 50px; */
       align-content: center;
       width: 100%;
+
       /* margin: 2em auto; */
       /* padding-bottom: 5%; */
     }
 
+  
+  .elem-project{
+    font-size: 1.2em;
+  }
 
   #idBotones button{
     font-size: small;
@@ -221,10 +226,9 @@ table {
 
 
   .footer{
-    font-size: small !important;
+    font-size: medium !important;
   }
 
-  
 
   #listaProductos{
     background: white;
@@ -242,5 +246,5 @@ table {
     font-size: 0.8em;
   }
 
-
   }
+  
