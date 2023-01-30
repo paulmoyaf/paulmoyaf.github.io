@@ -1,0 +1,236 @@
+	
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+	background: linear-gradient(to right, #242425 , #3f3f3f);
+	font-family: 'Lato', sans-serif;
+	font-size: 1.3em;
+	margin: 1em auto;
+	padding: 2em;
+	text-align: center;
+	display: grid;
+  grid-template-areas:
+  'header'
+  'nav'
+  'main'
+  'footer';
+  grid-template-rows: auto auto auto auto;
+}
+
+.header{
+  grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 240);
+    color:rgb(0, 2, 3);
+    width: auto;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.nav{
+  grid-area: nav;
+}
+.main{
+  grid-area: main;
+  /* padding: 50px; */
+  align-content: center;
+  width: 80%;
+  margin: 0.2em auto;
+  /* padding-bottom: 5%; */
+}
+
+.footer{
+  grid-area: footer;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  color:rgb(0, 0, 0);
+  padding: 20px;
+  font-size: 2em;
+  margin-top: 1em;
+  width: auto;
+}
+
+.tituloLista{
+    text-align: center;
+    color:aliceblue;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: grey 1px double;
+    margin-bottom: 1em;
+}
+
+
+#idBotones{
+
+    background-color: rgb(255, 255, 255);
+    color:aliceblue;
+    /* color es de la letra */
+    width: fit-content;
+    margin: 0px auto;
+    padding: 1em;
+    font-size: 25px;
+    border: grey 1px double;
+    border-radius: 0.5em;
+    margin-bottom: 2em;
+}
+
+
+.img{
+    width: 5em;
+}
+
+.examinar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em 0px;
+  color: aliceblue;
+}
+
+#listaProductos{
+	background: white;
+	border-radius: 10px;
+	text-align: left;
+	opacity: 0.8;
+	color: #4354e8;
+  font-size: 1em;
+  width: fit-content;
+  margin: 0px auto;
+  padding:1em;
+}
+
+li{
+	padding: 0.3em;
+}
+
+li:hover, svg:hover {
+	cursor: pointer;
+	color: #243057;
+}
+li.active{
+	color: #ccdaf5;
+}
+
+#download{
+  color: yellow;
+}
+
+
+table {
+    margin: 0 auto;
+    margin-bottom: 2em;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #d4d4d4;
+  }
+  
+  tr:first-child{
+    background: rgb(225, 228, 53) !important;
+    font-weight: bold
+  }
+
+  tr:nth-child(odd){
+    background: #fffff3;
+  }
+
+  tr:nth-child(even) {
+    background: #fdface;
+  }
+  
+  th, td {
+    padding: 0.4em 0.3em;
+  }
+  
+  th {
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  #headerRepositorio{
+    background: #d4d4d4;
+  }
+  #tituloRepositorio{
+    color: white;
+    text-align: left;
+    border-bottom: 1px grey double;
+    margin: 1em 0px;
+  }
+  .elem-project{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+    color: white !important;
+  }
+
+
+  .repositorios a{
+    color:white;
+  }
+
+
+  /* -------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------- */
+  
+  @media (max-width:880px) {
+
+
+
+    body{
+      background-color: #f70404;
+      margin: 1em auto;
+      padding: 0.2em;
+      /* margin: 0px 0px; */
+    }
+    .examinar{
+      width: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    table {
+      margin-bottom: 2em;
+      font-size: xx-small;
+    }
+    
+    th, td {
+      padding: 0.3em auto;
+    }
+  
+    .main{
+      grid-area: main;
+      /* padding: 50px; */
+      align-content: center;
+      width: 100%;
+      /* margin: 2em auto; */
+      /* padding-bottom: 5%; */
+    }
+    #idBotones{
+
+      background-color: rgb(255, 255, 255);
+      color:aliceblue;
+      margin: 0px auto;
+      padding: 0.5em;
+      border: grey 1px double;
+      border-radius: 0.5em;
+      margin-bottom: 2em;
+  }
+
+  #listaProductos{
+    background: white;
+    border-radius: 10px;
+    color: #4354e8;
+    font-size: 0.75em;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+  }
+  }

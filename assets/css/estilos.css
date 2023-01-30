@@ -96,9 +96,18 @@
     }
 
     .carrito{
-      /* background-color: blue; */
-      /* padding-left: 2rem; */
       width: 2rem;
+    }
+
+    #btadmin:hover{
+      opacity: 0.9;
+    }
+
+    .headerObjects {
+      /* background: #1C6EA4; */
+      display: flex;
+      padding: 1em;
+      gap: 1em;
     }
 
     .logoShop{
@@ -931,6 +940,7 @@ box-shadow: none;
 .nav > #nav-check {
   display: none;
 }
+
 
 
 /* ------------------------------------------------------------------------------------------------- */

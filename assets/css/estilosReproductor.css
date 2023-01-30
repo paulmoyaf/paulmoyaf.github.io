@@ -5,7 +5,7 @@ body{
 	background: linear-gradient(to right, #3c7dd3 , #96b6fa);
 	font-family: 'Lato', sans-serif;
 	font-size: 1.3em;
-	width: 50%;
+	width: 80%;
 	margin: 15px auto;
 	padding: 20px;
 	text-align: center;
@@ -22,7 +22,7 @@ body{
 }
 
 li{
-	padding: 10px;
+	padding: 0.4em;
 }
 
 li:hover, svg:hover {
@@ -35,12 +35,15 @@ li.active{
 
 
 .titulo{
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: space-around;
     background-color: rgb(41, 93, 172);
     color:aliceblue;
     /* color es de la letra */
     padding: 20px;
-    font-size: 25px;
+    font-size: 2em;
     border-radius: 10px;
 }
 
@@ -50,16 +53,14 @@ li.active{
     color:aliceblue;
     /* color es de la letra */
     padding: 20px;
-    font-size: 25px;
+    font-size: 1.3em;
 }
 
 
 .idBotones{
     text-align: right;
-    background-color: rgb(152, 199, 24);
     color:aliceblue;
-    /* color es de la letra */
-    padding: 100px;
+    padding: 5em;
     font-size: 25px;
 }
 
@@ -85,3 +86,37 @@ footer{
     border-radius: 10px;
 }
 
+
+@media (max-width:880px){
+
+
+    body{
+        background: linear-gradient(to right, #3c7dd3 , #96b6fa);
+        font-family: 'Lato', sans-serif;
+        /* font-size: 1.3em; */
+        width: 100%;
+        margin: 15px auto;
+        padding: 20px;
+        text-align: center;
+        /* min-height: 50vh; */
+    }
+
+    .imgLogo{
+        width: 3em;
+    }
+
+    .titulo{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        background-color: rgb(41, 93, 172);
+        color:aliceblue;
+        font-size: 1em;
+        border-radius: 10px;
+    }
+
+    #playList{
+        font-size: 0.8em;
+    }
+}
