@@ -198,7 +198,7 @@ table {
   
     table {
       margin-bottom: 2em;
-      font-size: xx-small;
+      font-size:0.45em;
     }
     
     th, td {
@@ -230,7 +230,7 @@ table {
     background: white;
     border-radius: 10px;
     color: #4354e8;
-    font-size: 0.6em;
+    font-size: 0.7em;
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
