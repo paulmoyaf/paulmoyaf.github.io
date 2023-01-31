@@ -332,7 +332,7 @@ const AdicionarProducto = () => {
             teclado.setDcto = dcto;
             break;
           case 5:
-            const prime = prompt(`Id Producto: ${teclado.getId}\nValor anterior: ${teclado.getPrime}\nNuevo valor de Prime (true/false):`);
+            const prime = prompt(`Id Producto: ${teclado.getId}\nValor anterior: ${teclado.getPrime}\nNuevo valor de Prime (s/n):`);
             teclado.isPrime = prime;
             break;
           case 6:

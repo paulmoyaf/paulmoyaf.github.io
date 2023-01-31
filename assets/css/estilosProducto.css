@@ -125,6 +125,7 @@ table {
     text-align: center;
     border-collapse: collapse;
     border: 1px solid #d4d4d4;
+    width: 100%;
   }
   
   tr:first-child{
@@ -185,7 +186,7 @@ table {
 
 
     body{
-      background-color: #f70404;
+      /* background-color: #f70404; */
       margin: 1em auto;
       padding: 0.2em;
       /* margin: 0px 0px; */
@@ -199,6 +200,7 @@ table {
     table {
       margin-bottom: 2em;
       font-size:0.4em;
+      width:100%;
     }
     
     th, td {
