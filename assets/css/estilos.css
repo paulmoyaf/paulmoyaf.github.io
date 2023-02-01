@@ -156,11 +156,6 @@
      }
 
 /* *******************index */
-    #picPrincipal{
-      grid-area: picPrincipal;
-      width: 100%;
-      
-    }
 
 
     .instrumentosGrid{
@@ -176,6 +171,57 @@
       /* gap: %; */
       /* background-color: #2196F3; */
     }
+/* ------------------------------------------------------------------SLIDER-------------- */
+
+.picPrincipal{
+  grid-area: picPrincipal;
+height: 100%;
+
+}
+
+.slider {
+	width: auto;
+	/* margin: auto; */
+	overflow:hidden;
+  /* background: #1C6EA4; */
+  margin-top: -1em;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 25s infinite alternate;
+
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+  
+}
+
+.imgPortada{
+	width: 100%;
+  height: 20em;
+}
+
+@keyframes cambio {
+
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%}
+	45% {margin-left: -100%}
+	
+	50% {margin-left: -200%}
+	70% {margin-left: -200%}
+	
+	75% {margin-left: -300%}
+	100% {margin-left: -300%}
+}
+
+
 
     /* --------------------------------------------------GUITARRAS - TECLADOS ------- */
     .mainGuitarras{
@@ -209,8 +255,18 @@
 
     }
 
+
     .instrumentosGrid5 article, .instrumentosGrid3 article{
       border: rgba(0, 0, 0, 0.04) 1px double;
+      transition: transform .2s;
+    }
+
+    .instrumentosGrid5 article:hover{
+      transform: scale(1.2);
+    }
+
+    .instrumentosGrid3 article:hover{
+      transform: scale(1.1);
     }
     
     .stockTitulo{
@@ -1085,7 +1141,11 @@ box-shadow: none;
       grid-template-rows: auto auto;
       font-size: 1.2rem;
     }
+/* -----------------------------------------------------------SLIDER */
 
+    .imgPortada{
+      height: 12em;
+    }
     /* informacion------------------------------------------------------- */
 
     .infoCliente{
@@ -1175,6 +1235,10 @@ width: 40%;
     
     .stockTitulo{
       font-size: 1.2em;
+    }
+
+    .instrumentosGrid3 article:hover{
+      transform: none;
     }
 
 /* **********************mainCAR****************************** */
