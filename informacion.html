@@ -66,7 +66,7 @@
                         <article class="formulario" id="formPago">
                             <div class="elem-group">
                                 <label for="name">Nombre:</label>
-                                <input type="text" name="visitor_name" id="name" placeholder="Ingrese Nombre" required>
+                                <input type="text" name="visitor_name" id="name" placeholder="Ingrese Nombre" required pattern="[A-Za-z]{3,25}">
                             </div>
                             <div class="elem-group">
                                 <label for="name">Apellido:</label>
@@ -78,7 +78,7 @@
                             </div>
                             <div class="elem-group">
                                 <label for="name">Codigo Postal:</label>
-                                <input type="text" name="visitor_postkodea" id="name" placeholder="Codigo Postal" required>
+                                <input type="text" name="visitor_postkodea" id="name" placeholder="Codigo Postal" required maxlength="5">
                             </div>
                             <div class="elem-group">
                                 <label for="name">Teléfono:</label>
@@ -195,6 +195,6 @@
             <!-- </section> -->
     
         </footer>
-        <script src="js/scripts.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>

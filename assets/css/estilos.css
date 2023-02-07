@@ -1074,6 +1074,8 @@ box-shadow: none;
     }
 
     /* ------------------------------------------------------NAV----------------- */
+    .fixed{position: fixed; top: 0; width: 80%;}
+  
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
