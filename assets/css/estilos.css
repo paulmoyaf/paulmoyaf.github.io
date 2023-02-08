@@ -1122,7 +1122,7 @@ nav:hover ~ nav{
 }
 
 .logoShop{
-  padding: 0.9em 0px;
+  padding: 0.8em 0px;
 }
 
     .nav > .nav-btn {
@@ -1290,14 +1290,15 @@ width: 40%;
     }
 
     .instrumentosGrid5 article, .instrumentosGrid3 article{
-      border: none;
+      /* border: none; */
+      
     }
     
     .stockTitulo{
       font-size: 1.2em;
     }
 
-    .instrumentosGrid3 article:hover{
+    .instrumentosGrid3 article:hover, .instrumentosGrid5 article:hover{
       transform: none;
     }
 
