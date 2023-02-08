@@ -1115,6 +1115,16 @@ nav:hover ~ nav{
       height: 9.5em;
     }
 
+.nav {
+  /* width: auto; */
+  display: inline;
+
+}
+
+.logoShop{
+  padding: 0.9em 0px;
+}
+
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -1123,7 +1133,8 @@ nav:hover ~ nav{
       align-items: center;
     }
 
-    .nav > .nav-btn > label {
+    /* boton */
+    .nav > .nav-btn > label { 
       display: inline-block;
       width: auto;
       /* width: 50px; */
@@ -1132,6 +1143,7 @@ nav:hover ~ nav{
       padding: 3em 2em;
 
     }
+
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
       background-color: rgba(0, 0, 0, 0.3);
     }
@@ -1141,20 +1153,27 @@ nav:hover ~ nav{
       height: 10px;
       border-top: 2px solid #eee;
     }
+
+    /* vista del nuevo nav */
     .nav > .nav-links {
+ 
       position: absolute;
+      /* margin-top: 1em; */
       display: block;
       width: 100%;
       background-color: #333;
       height: 0px;
+   
+      /* transition: 0.3s step-end; */
       transition: all 0.3s ease-in;
       overflow-y: hidden;
-      top: auto;
       left: 0px;
     }
     .nav > .nav-links > a {
       display: block;
       width: auto;
+      text-align: center;
+      /* padding-left:3em; */
     }
     /* // cuanto se ve cuando aparece */
     .nav > #nav-check:not(:checked) ~ .nav-links {
@@ -1774,7 +1793,8 @@ width: 40%;
 }
 
 #imgMensaje{
- width: 4em;
+ width: 7em;
+ padding-left: 3em;
 }
 .mensaje{
   text-align: center;
