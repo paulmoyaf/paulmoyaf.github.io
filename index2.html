@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="shortcut icon" href="rsc/IC-cuadrado.png">
+
+</head>
+<body class="grid-layout">
+    
+    <header class="header">
+        <div class="titleGps">
+            <img class="gps" src="rsc/gps.png" alt="">
+            <a href="contacto.html">Ondarroa - Bizkaia</a>
+        </div>
+        
+        <!-- <p>paul.moyaf@gmail.com</p> -->
+        <!-- <a href="car.html"><img class="carrito" src="rsc/carro1.png" alt=""></a> -->
+        <div class="headerObjects">
+            <a href="car.html"><button class="btCar"><img class="carrito" src="rsc/carrito.png" alt=""></button></a>
+            <a href="csv-js.html"><img class="carrito" id="btadmin" src="rsc/admin.png" alt=""></a>    
+        </div>
+
+    </header>
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <div class="logo">
+                    <a href="https://ilargicreative.garbikotxe.com"><img class="logoShop" src="rsc/IC-horizontal.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        
+        <div class="nav-links">
+            <a href="index2.html" target="_self">Inicio</a>
+            <a href="guitarras.html" target="_self">Guitarras</a>
+            <a href="teclados.html" target="_self">Teclados</a>
+            <a href="contacto.html" target="_self">Contacto</a>
+            <a href="reproductor.html" target="_self">Reproductor</a>
+            <a href="index.html" target="_self">Proyectos Github</a>     
+        </div>
+    </nav>
+
+    <!-- <div class="navMovil">
+        <ul class="navlinksMovil">
+            <li><a href="#">Guitarras</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="varios.html">Repositorio</a></li>
+        </ul>
+    </div>
+     -->
+    <main class="mainIndex">
+        <section class="picPrincipal">
+            <div class="slider">
+                <ul>
+                    <li>
+                        <img class="imgPortada" src="rsc/portadas/guitarPortada4.png" alt="">
+                    </li>
+                    <li>
+                        <img class="imgPortada" src="rsc/portadas/guitarPortada2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img class="imgPortada" src="rsc/portadas/guitarPortada.jpg" alt="">
+                    </li>
+                    <li>
+                        <img class="imgPortada" src="rsc/portadas/guitarPortada5.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="instrumentosGrid">
+            <article>
+                <a href="guitar.html" >
+                    <img id="marcaInd" src="rsc/ibanez.png" alt="">
+                    <section>
+                        <img id="instrumento1" src="rsc/guitarra.png" alt="">
+                    </section>
+                    <section>
+                        <p>Ibanez 500x</p>
+                        <p id="precioVarios">150.<sup>00</sup> €</p>
+                    </section>
+                </a>
+            </article>
+            <article>
+                <a href="guitar.html" >
+                    <img id="marcaInd" src="rsc/yamaha.png" alt="">
+                    <section>
+                        <img id="instrumento1" src="rsc/guitarra2.png" alt="">
+                    </section>
+                    <section>
+                        <p>Yamaha Rev-5</p>
+                        <p id="precioVarios">750.<sup>00</sup> €</p>
+                    </section>
+                </a>                    
+            </article> 
+            <article>
+                <a href="guitar.html" >
+                    <img id="marcaInd" src="rsc/fender.png" alt="">
+                    <section>
+                        <img id="instrumento1" src="rsc/guitarra3.png" alt="">
+                    </section>
+                    <section>
+                        <p>Fender Telecaster 300c</p>
+                        <p id="precioVarios">2100.<sup>00</sup> €</p>
+                    </section>
+                </a>                    
+            </article>
+            <article>
+                <a href="guitar.html" >
+                    <img id="marcaInd" src="rsc/yamaha.png" alt="">
+                    <section>
+                        <img id="instrumentoKey" src="rsc/key1.png" alt="">
+                    </section>
+                    <section>
+                        <p>Yamaha Rev-5</p>
+                        <p id="precioVarios">750.<sup>00</sup> €</p>
+                    </section>
+                </a>                    
+            </article> 
+            <article>
+                <a href="guitar.html" >
+                    <img id="marcaInd" src="rsc/yamaha.png" alt="">
+                    <section>
+                        <img id="instrumentoKey" src="rsc/key2.png" alt="">
+                    </section>
+                    <section>
+                        <p>Fender Telecaster 300c</p>
+                        <p id="precioVarios">2100.<sup>00</sup> €</p>
+                    </section>
+                </a>                    
+            </article>
+            <article>
+                <a href="guitar.html" >
+                    <img id="marcaInd" src="rsc/yamaha.png" alt="">
+                    <section>
+                        <img id="instrumentoKey" src="rsc/key3.png" alt="">
+                    </section>
+                    <section>
+                        <p>Fender Telecaster 300c</p>
+                        <p id="precioVarios">2100.<sup>00</sup> €</p>
+                    </section>
+                </a>                    
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- <section class="footer main"> -->
+            <section class="footerInicio">
+                <article>
+                    <h3>Productos</h3>
+                        <p><a href="guitarras.html">Guitarras</a></p>
+                        <p><a href="teclados.html">Teclados</a></p>
+                        <p><a href="">Baterias</a></p>
+                        <p><a href="">Bajos</a></p>
+                        <p><a href="">Microfonos</a></p>
+                        <p><a href="reproductor.html">Reproductor</a></p>
+                </article>
+    
+                <article>
+                    <h3>Empresa</h3>
+                        <p><a href="">Sobre Nosotros</a></p>
+                        <p><a href="">Mision</a></p>
+                        <p><a href="">Vision</a></p>
+                        <p><a href="">Trabaja con Nosotros</a></p>
+                </article>
+    
+                <article>
+                    <h3>Atencion al Cliente</h3>
+                        <p><a href="contacto.html">Contactos</a></p>
+                        <p><a href="">Ayuda</a></p>
+                        <p><a href="">Registra tu producto</a></p>
+                </article>
+    
+            </section>
+    
+            <section class="footerFin">
+                <p>&copy; 2023 Desarrollado por: <a id="linkIC" href="http://ilargicreative.garbikotxe.com">Ilargi Creative</a></p>
+                <p>Music Shop</p>
+                <p>Ondarroa - Bizkaia</p>
+            </section>
+
+   
+
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

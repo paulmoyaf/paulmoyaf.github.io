@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fasthand&family=Lexend:wght@400;700&family=Noto+Sans+JP:wght@900&family=Nunito:wght@400;800&family=Poppins:wght@400;600;800&display=swap');
+
+
+.grid-layoutIndex{
+    grid-template-areas:
+    'header'
+    'nav'
+    'main'
+    'footer';
+    grid-template-rows: auto auto 4em;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(44, 44, 44);
+}
+
+.header{
+    grid-area: header;
+    height: 6em;
+    /* background-color: rgb(240, 240, 240); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px rgb(121, 121, 121) double;
+
+}
+
+#tituloHeader{
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+    background-color: rgb(11, 224, 64);
+    color: black;
+}
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8em;
+    margin: 1em auto;
+}
+
+.main{
+    grid-area: main;
+    width: 80%;
+    margin: 3em auto;
+}
+
+.grid-main{
+    padding: 2em 2em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2em;
+}
+
+.titulo-project{
+    display: flex;
+    justify-content: center;
+}
+
+.elem-project a{
+    /* display: flex; */
+    text-align: center;
+    margin-left: 2em;
+    font-size: 1.5em;
+    /* justify-content: right; */
+}
+
+.elem-project p{
+text-align: justify;
+padding: 1em 0px;
+}
+
+.logo{
+    width: 7em;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px rgb(119, 119, 119) double;
+    height: 8em;
+}
+
+#tituloRepositorio{
+    font-size: 2.5em;
+    border-bottom: 1px white double;
+    padding: 0.5em;
+}
+
+.logo-tecnologias{
+    padding: 1em 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}

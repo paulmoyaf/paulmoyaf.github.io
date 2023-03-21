@@ -1,203 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Store</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    <link rel="shortcut icon" href="rsc/IC-cuadrado.png">
+    <title>Proyectos de Aprendizaje</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="rsc/PaulLogo1.png">
 
-</head>
-<body class="grid-layout">
     
-    <header class="header">
-        <div class="titleGps">
-            <img class="gps" src="rsc/gps.png" alt="">
-            <a href="contacto.html">Ondarroa - Bizkaia</a>
-        </div>
-        
-        <!-- <p>paul.moyaf@gmail.com</p> -->
-        <!-- <a href="car.html"><img class="carrito" src="rsc/carro1.png" alt=""></a> -->
-        <div class="headerObjects">
-            <a href="car.html"><button class="btCar"><img class="carrito" src="rsc/carrito.png" alt=""></button></a>
-            <a href="csv-js.html"><img class="carrito" id="btadmin" src="rsc/admin.png" alt=""></a>    
-        </div>
+</head>
+<body class="grid-layoutIndex">
 
+    <header class="header">
+       paul.moyaf@gmail.com
+       <!-- <p>679 03 40 40</p> -->
     </header>
-    <nav class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-            <div class="nav-title">
-                <div class="logo">
-                    <a href="https://ilargicreative.garbikotxe.com"><img class="logoShop" src="rsc/IC-horizontal.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-        
-        <div class="nav-links">
-            <a href="index.html" target="_self">Inicio</a>
-            <a href="guitarras.html" target="_self">Guitarras</a>
-            <a href="teclados.html" target="_self">Teclados</a>
-            <a href="contacto.html" target="_self">Contacto</a>
-            <a href="reproductor.html" target="_self">Reproductor</a>
-            <a href="proyectos.html" target="_self">Proyectos Github</a>     
-        </div>
+
+    <nav class="nav" id="navRepositorio">
+        <a href="index.html"><img class="logo" src="rsc/PaulLogo1.png" alt="" ></a>
+        <h3>Proyectos de Aprendizaje</h3>
     </nav>
 
-    <!-- <div class="navMovil">
-        <ul class="navlinksMovil">
-            <li><a href="#">Guitarras</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Software</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="varios.html">Repositorio</a></li>
-        </ul>
-    </div>
-     -->
-    <main class="mainIndex">
-        <section class="picPrincipal">
-            <div class="slider">
-                <ul>
-                    <li>
-                        <img class="imgPortada" src="rsc/portadas/guitarPortada4.png" alt="">
-                    </li>
-                    <li>
-                        <img class="imgPortada" src="rsc/portadas/guitarPortada2.jpg" alt="">
-                    </li>
-                    <li>
-                        <img class="imgPortada" src="rsc/portadas/guitarPortada.jpg" alt="">
-                    </li>
-                    <li>
-                        <img class="imgPortada" src="rsc/portadas/guitarPortada5.png" alt="">
-                    </li>
-                </ul>
+    <main class="main" id="mainRepositorio">
+    
+        <div class="repositorios">
+            <h2 id="tituloRepositorio">Repositorios:</h2>
+    
+            <div class="grid-main">
+                <div class="elem-project">
+                    <div class="titulo-project">
+                        <img src="rsc/github.png" alt="" width="50">
+                        <a href=" https://github.com/paulmoyaf">Repositorio GitHub</a>
+                    </div>
+                    <p>
+                        Conjunto de repositorios en GitHub desarrollados para mejorar el auto-aprendizaje
+                    </p>
+                </div>
+                <div class="elem-project">
+                    <div class="titulo-project">
+                        <img src="rsc/JavaScript-logo.png" alt="" width="50">
+                        <a href="https://github.com/paulmoyaf/CSV-JavaScript">CSV-JavaScript</a>
+                    </div>
+                    <p>
+                        Conexion de informacion con archivos CSV a Javascript.
+                        Se puede visualizar el contenido en Consola o con DOM.
+                        Creacion de objetos. Manejo de Arrays con objetos.
+                    </p>
+                </div>
+                <div class="elem-project">
+                    <div class="titulo-project">                      
+                        <img src="rsc/JavaScript-logo.png" alt="" width="50">
+                        <a href="https://github.com/paulmoyaf/JukeBox-JS">Reproduccion Audio con JS</a>
+                    </div>
+                    <p>
+                        Reproduccion de Audio con JS
+                        Los audios estan en un array y se pueden habilitar o desabilitar a traves del DOM.
+                    </p>
+                </div>
+                <div class="elem-project">
+                    <div class="titulo-project">                       
+                        <img src="rsc/Java.png" alt="" width="50">
+                        <a href=" https://github.com/paulmoyaf/Store">MySQL - Java</a>
+                    </div>
+                    <p>
+                        Proyecto para conectar una base de datos con MySQL.
+                        Se puede realizar funciones de crear, borrar, cambiar y eliminar items. Crea objetos internamente.
+                        La configuracion de la base datos tambien posee unas celdas que estas alimentadas por informacion de
+                        otras celdas.
+                        Tiene dos formularios para visualizar la base de datos.
+                        Puede exportar la informacion de la BBDD a CSV.
+                    </p>
+                </div>
+                <div class="elem-project">
+                    <div class="titulo-project">                       
+                        <img src="rsc/Java.png" alt="" width="50">
+                        <a href=" https://github.com/paulmoyaf/Store">CSV - Java - XML</a>
+                    </div>
+                    <p>
+                        Conexion de informacion con archivos CSV a JAVA.
+                        Creacion de objetos, clases abstracta, herencias, polimorfismos. Manejo de Arrays con objetos.
+                        Se actualizo el archivo con la creacion de archivos XML.
+                    </p>
+                </div>
+                <div class="elem-project">
+                    <div class="titulo-project">                        
+                        <img src="rsc/Java.png" alt="" width="50">
+                        <a href=" https://github.com/paulmoyaf/JukeBox-Java">Audio ♪ + JAVA</a>
+                    </div>
+                    <p>
+                        Proyecto de reproduccion de archivos WAV en JAVA.
+                        Incluye opcion de ingreso de monedas simulando un JUKEBOX.
+                    </p>
+                </div>
+                <div class="elem-project">
+                    <div class="titulo-project">                       
+                        <img src="rsc/python.png" alt="" width="50">
+                        <a href="https://github.com/paulmoyaf/JukeBox---Python">Audio ♪ + Python</a>
+                    </div>
+                    <p>
+                        Proyecto de reproduccion de archivos de audio en Python.
+                        Incluye opcion de ingreso de monedas simulando un JUKEBOX.
+                    </p>
+                </div>
+                <div class="elem-project">
+                    <div class="titulo-project">               
+                        <img src="rsc/HTML.png" alt="" width="50">
+                        <a href="https://paulmoyaf.github.io/index2.html">Tienda Online (Design)</a>
+                    </div>
+                    <p>
+                        Proyecto de diseño HTML con CSS, simulando una tienda Online.
+                        Existen apartados en esta pagina que suman proyectos anteriores realizados con JS: audio + csv.
+                    </p>
+                </div>
             </div>
-        </section>
-        <section class="instrumentosGrid">
-            <article>
-                <a href="guitar.html" >
-                    <img id="marcaInd" src="rsc/ibanez.png" alt="">
-                    <section>
-                        <img id="instrumento1" src="rsc/guitarra.png" alt="">
-                    </section>
-                    <section>
-                        <p>Ibanez 500x</p>
-                        <p id="precioVarios">150.<sup>00</sup> €</p>
-                    </section>
-                </a>
-            </article>
-            <article>
-                <a href="guitar.html" >
-                    <img id="marcaInd" src="rsc/yamaha.png" alt="">
-                    <section>
-                        <img id="instrumento1" src="rsc/guitarra2.png" alt="">
-                    </section>
-                    <section>
-                        <p>Yamaha Rev-5</p>
-                        <p id="precioVarios">750.<sup>00</sup> €</p>
-                    </section>
-                </a>                    
-            </article> 
-            <article>
-                <a href="guitar.html" >
-                    <img id="marcaInd" src="rsc/fender.png" alt="">
-                    <section>
-                        <img id="instrumento1" src="rsc/guitarra3.png" alt="">
-                    </section>
-                    <section>
-                        <p>Fender Telecaster 300c</p>
-                        <p id="precioVarios">2100.<sup>00</sup> €</p>
-                    </section>
-                </a>                    
-            </article>
-            <article>
-                <a href="guitar.html" >
-                    <img id="marcaInd" src="rsc/yamaha.png" alt="">
-                    <section>
-                        <img id="instrumentoKey" src="rsc/key1.png" alt="">
-                    </section>
-                    <section>
-                        <p>Yamaha Rev-5</p>
-                        <p id="precioVarios">750.<sup>00</sup> €</p>
-                    </section>
-                </a>                    
-            </article> 
-            <article>
-                <a href="guitar.html" >
-                    <img id="marcaInd" src="rsc/yamaha.png" alt="">
-                    <section>
-                        <img id="instrumentoKey" src="rsc/key2.png" alt="">
-                    </section>
-                    <section>
-                        <p>Fender Telecaster 300c</p>
-                        <p id="precioVarios">2100.<sup>00</sup> €</p>
-                    </section>
-                </a>                    
-            </article>
-            <article>
-                <a href="guitar.html" >
-                    <img id="marcaInd" src="rsc/yamaha.png" alt="">
-                    <section>
-                        <img id="instrumentoKey" src="rsc/key3.png" alt="">
-                    </section>
-                    <section>
-                        <p>Fender Telecaster 300c</p>
-                        <p id="precioVarios">2100.<sup>00</sup> €</p>
-                    </section>
-                </a>                    
-            </article>
-        </section>
+    
+        </div>
+    
+        <h2 id="tituloRepositorio">Tecnologías utilizadas:</h2>
+        <div class="logo-tecnologias">
+            <img src="rsc/git.png" alt="" width="60">
+            <img src="rsc/HTML.png" alt="" width="60">
+            <img src="rsc/JavaScript-logo.png" alt="" width="50">
+            <img src="rsc/Java.png" alt="" width="50">
+            <img src="rsc/python.png" alt="" width="50">
+            <img src="rsc/MySQL-logo.png" alt="" width="50">
+        </div>
+
+    
     </main>
 
     <footer class="footer">
-        <!-- <section class="footer main"> -->
-            <section class="footerInicio">
-                <article>
-                    <h3>Productos</h3>
-                        <p><a href="guitarras.html">Guitarras</a></p>
-                        <p><a href="teclados.html">Teclados</a></p>
-                        <p><a href="">Baterias</a></p>
-                        <p><a href="">Bajos</a></p>
-                        <p><a href="">Microfonos</a></p>
-                        <p><a href="reproductor.html">Reproductor</a></p>
-                </article>
-    
-                <article>
-                    <h3>Empresa</h3>
-                        <p><a href="">Sobre Nosotros</a></p>
-                        <p><a href="">Mision</a></p>
-                        <p><a href="">Vision</a></p>
-                        <p><a href="">Trabaja con Nosotros</a></p>
-                </article>
-    
-                <article>
-                    <h3>Atencion al Cliente</h3>
-                        <p><a href="contacto.html">Contactos</a></p>
-                        <p><a href="">Ayuda</a></p>
-                        <p><a href="">Registra tu producto</a></p>
-                </article>
-    
-            </section>
-    
-            <section class="footerFin">
-                <p>&copy; 2023 Desarrollado por: <a id="linkIC" href="http://ilargicreative.garbikotxe.com">Ilargi Creative</a></p>
-                <p>Music Shop</p>
-                <p>Ondarroa - Bizkaia</p>
-            </section>
-
-   
-
+        <p>&copy; 2023 Desarrollado por: <a id="linkIC" href="https://github.com/paulmoyaf">Paul Moya</a></p>
     </footer>
     <script src="assets/js/scripts.js"></script>
+
 </body>
 </html>
