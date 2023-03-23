@@ -47,7 +47,7 @@
 .main{
     grid-area: main;
     width: 80%;
-    margin: 3em auto;
+    margin: 0em auto;
 }
 
 .grid-main{
@@ -65,7 +65,7 @@
 .elem-project a{
     /* display: flex; */
     text-align: center;
-    margin-left: 2em;
+    margin-left: 0.5em;
     font-size: 1.5em;
     /* justify-content: right; */
 }
@@ -73,6 +73,13 @@
 .elem-project p{
 text-align: justify;
 padding: 1em 0px;
+
+}
+
+.elem-project {
+/* border: 1px rgb(70, 70, 70) double; */
+background-color: rgb(46, 46, 46);
+padding: 0.8em;
 }
 
 .logo{
@@ -113,4 +120,44 @@ a{
 a:hover{
     text-decoration: none;
     color: rgb(206, 206, 206);
+}
+
+@media (max-width:880px) {
+
+
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        gap:2em;
+        /* height: 8em; */
+        margin: 1em auto;
+    }
+
+    .main{
+        grid-area: main;
+        width: 100%;
+        margin: 4em auto;
+    }
+
+    .grid-main{
+        padding: 2em 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .logo-tecnologias{
+        padding: 1em 3em;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+        /* gap: 2em; */
+        /* align-items: center; */
+        justify-content: center;
+        
+    }
+
 }
