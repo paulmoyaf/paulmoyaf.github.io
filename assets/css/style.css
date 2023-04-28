@@ -59,21 +59,26 @@
 
 .titulo-project{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+}
+
+.titulo-project img{
+    height: 3em;
 }
 
 .elem-project a{
     /* display: flex; */
     text-align: center;
-    margin-left: 0.5em;
-    font-size: 1.5em;
+    margin-left: 0.1em;
+    font-size: 1.2em;
     /* justify-content: right; */
 }
 
 .elem-project p{
 text-align: justify;
+/* text-align: center; */
 padding: 1em 0px;
-
+font-size: small;
 }
 
 .elem-project {
@@ -96,7 +101,7 @@ padding: 0.8em;
 }
 
 #tituloRepositorio{
-    font-size: 2.5em;
+    font-size: 2.2em;
     border-bottom: 1px white double;
     padding: 0.5em;
 }
